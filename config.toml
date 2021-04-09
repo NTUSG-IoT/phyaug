@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "ntuiot.xyz/phyaug/"
 languageCode = "en-US"
 defaultContentLanguage = "en"
 
@@ -9,7 +9,7 @@ metaDataFormat = "yaml"
 defaultContentLanguageInSubdir= true
 
 [params]
-  editURL = "https://github.com/matcornic/hugo-theme-learn/edit/master/exampleSite/content/"
+  editURL = ""
   description = "Documentation for Hugo Learn Theme"
   author = "Mathieu Cornic"
   showVisitedLinks = true
@@ -28,7 +28,7 @@ home = [ "HTML", "RSS", "JSON"]
 title = "Documentation for Hugo Learn Theme"
 weight = 1
 languageName = "English"
-landingPageURL = "/en"
+landingPageURL = "en"
 landingPageName = "<i class='fas fa-home'></i> Home"
 
 [[Languages.en.menu.shortcuts]]
