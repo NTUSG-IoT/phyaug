@@ -17,7 +17,7 @@ if [ -n "$*" ]; then
 fi
 git commit -m "$msg"
 
-git push origin main
+git push origin source
 
 printf "\033[0;32mDeploying website to GitHub...\033[0m\n"
 
@@ -36,6 +36,6 @@ fi
 git commit -m "$msg"
 
 # Push source and build repos.
-git push source source
+git push origin main
 
 
