@@ -3,568 +3,568 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/en/basics/</loc>
+    <loc>phyaug/en/basics/</loc>
     <lastmod>2016-04-09T16:50:16+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/basics/"
+                href="phyaug/fr/basics/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/zh/basics/"
+                href="phyaug/zh/basics/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/basics/"
+                href="phyaug/en/basics/"
                 />
   </url>
   
   <url>
-    <loc>/en/cont/pages/</loc>
+    <loc>phyaug/en/cont/pages/</loc>
     <lastmod>2016-04-09T16:50:16+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/cont/pages/"
+                href="phyaug/fr/cont/pages/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/cont/pages/"
+                href="phyaug/en/cont/pages/"
                 />
   </url>
   
   <url>
-    <loc>/en/cont/</loc>
+    <loc>phyaug/en/cont/</loc>
     <lastmod>2020-06-01T13:31:12+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/cont/"
+                href="phyaug/fr/cont/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/cont/"
+                href="phyaug/en/cont/"
                 />
   </url>
   
   <url>
-    <loc>/en/cont/archetypes/</loc>
+    <loc>phyaug/en/cont/archetypes/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/cont/archetypes/"
+                href="phyaug/fr/cont/archetypes/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/cont/archetypes/"
+                href="phyaug/en/cont/archetypes/"
                 />
   </url>
   
   <url>
-    <loc>/en/basics/requirements/</loc>
+    <loc>phyaug/en/basics/requirements/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/basics/requirements/"
+                href="phyaug/fr/basics/requirements/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/basics/requirements/"
+                href="phyaug/en/basics/requirements/"
                 />
   </url>
   
   <url>
-    <loc>/en/cont/markdown/</loc>
+    <loc>phyaug/en/cont/markdown/</loc>
     <lastmod>2016-04-09T16:50:16+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/cont/markdown/"
+                href="phyaug/fr/cont/markdown/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/cont/markdown/"
+                href="phyaug/en/cont/markdown/"
                 />
   </url>
   
   <url>
-    <loc>/en/shortcodes/</loc>
+    <loc>phyaug/en/shortcodes/</loc>
     <lastmod>2016-04-09T16:50:16+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/shortcodes/"
+                href="phyaug/fr/shortcodes/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/shortcodes/"
+                href="phyaug/en/shortcodes/"
                 />
   </url>
   
   <url>
-    <loc>/en/basics/installation/</loc>
+    <loc>phyaug/en/basics/installation/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/basics/installation/"
+                href="phyaug/fr/basics/installation/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/basics/installation/"
+                href="phyaug/en/basics/installation/"
                 />
   </url>
   
   <url>
-    <loc>/en/cont/syntaxhighlight/</loc>
+    <loc>phyaug/en/cont/syntaxhighlight/</loc>
     <lastmod>2020-06-01T13:31:12+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/en/basics/configuration/</loc>
+    <loc>phyaug/en/basics/configuration/</loc>
     <lastmod>2016-04-09T16:50:16+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/basics/configuration/"
+                href="phyaug/fr/basics/configuration/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/basics/configuration/"
+                href="phyaug/en/basics/configuration/"
                 />
   </url>
   
   <url>
-    <loc>/en/cont/menushortcuts/</loc>
+    <loc>phyaug/en/cont/menushortcuts/</loc>
     <lastmod>2016-04-09T16:50:16+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/cont/menushortcuts/"
+                href="phyaug/fr/cont/menushortcuts/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/cont/menushortcuts/"
+                href="phyaug/en/cont/menushortcuts/"
                 />
   </url>
   
   <url>
-    <loc>/en/basics/style-customization/</loc>
+    <loc>phyaug/en/basics/style-customization/</loc>
     <lastmod>2016-04-09T16:50:16+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/basics/style-customization/"
+                href="phyaug/fr/basics/style-customization/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/basics/style-customization/"
+                href="phyaug/en/basics/style-customization/"
                 />
   </url>
   
   <url>
-    <loc>/en/cont/icons/</loc>
+    <loc>phyaug/en/cont/icons/</loc>
   </url>
   
   <url>
-    <loc>/en/cont/i18n/</loc>
+    <loc>phyaug/en/cont/i18n/</loc>
     <lastmod>2016-04-09T16:50:16+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/cont/i18n/"
+                href="phyaug/fr/cont/i18n/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/cont/i18n/"
+                href="phyaug/en/cont/i18n/"
                 />
   </url>
   
   <url>
-    <loc>/en/cont/tags/</loc>
+    <loc>phyaug/en/cont/tags/</loc>
     <lastmod>2018-11-29T08:41:44+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/cont/tags/"
+                href="phyaug/fr/cont/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/cont/tags/"
+                href="phyaug/en/cont/tags/"
                 />
   </url>
   
   <url>
-    <loc>/en/</loc>
+    <loc>phyaug/en/</loc>
     <lastmod>2020-06-01T13:31:12+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/"
+                href="phyaug/fr/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/zh/"
+                href="phyaug/zh/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/"
+                href="phyaug/en/"
                 />
   </url>
   
   <url>
-    <loc>/en/tags/documentation/</loc>
+    <loc>phyaug/en/tags/documentation/</loc>
     <lastmod>2018-11-29T08:41:44+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/tags/documentation/"
+                href="phyaug/fr/tags/documentation/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/tags/documentation/"
+                href="phyaug/en/tags/documentation/"
                 />
   </url>
   
   <url>
-    <loc>/en/tags/</loc>
+    <loc>phyaug/en/tags/</loc>
     <lastmod>2018-11-29T08:41:44+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/tags/"
+                href="phyaug/fr/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/zh/tags/"
+                href="phyaug/zh/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/tags/"
+                href="phyaug/en/tags/"
                 />
   </url>
   
   <url>
-    <loc>/en/tags/tutorial/</loc>
+    <loc>phyaug/en/tags/tutorial/</loc>
     <lastmod>2018-11-29T08:41:44+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/tags/tutorial/"
+                href="phyaug/fr/tags/tutorial/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/tags/tutorial/"
+                href="phyaug/en/tags/tutorial/"
                 />
   </url>
   
   <url>
-    <loc>/en/shortcodes/attachments/</loc>
+    <loc>phyaug/en/shortcodes/attachments/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/shortcodes/attachments/"
+                href="phyaug/fr/shortcodes/attachments/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/shortcodes/attachments/"
+                href="phyaug/en/shortcodes/attachments/"
                 />
   </url>
   
   <url>
-    <loc>/en/shortcodes/button/</loc>
+    <loc>phyaug/en/shortcodes/button/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/shortcodes/button/"
+                href="phyaug/fr/shortcodes/button/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/shortcodes/button/"
+                href="phyaug/en/shortcodes/button/"
                 />
   </url>
   
   <url>
-    <loc>/en/categories/</loc>
+    <loc>phyaug/en/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/categories/"
+                href="phyaug/fr/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/zh/categories/"
+                href="phyaug/zh/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/categories/"
+                href="phyaug/en/categories/"
                 />
   </url>
   
   <url>
-    <loc>/en/shortcodes/children/</loc>
+    <loc>phyaug/en/shortcodes/children/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/shortcodes/children/"
+                href="phyaug/fr/shortcodes/children/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/shortcodes/children/"
+                href="phyaug/en/shortcodes/children/"
                 />
   </url>
   
   <url>
-    <loc>/en/credits/</loc>
+    <loc>phyaug/en/credits/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/credits/"
+                href="phyaug/fr/credits/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/credits/"
+                href="phyaug/en/credits/"
                 />
   </url>
   
   <url>
-    <loc>/en/shortcodes/expand/</loc>
+    <loc>phyaug/en/shortcodes/expand/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/shortcodes/expand/"
+                href="phyaug/fr/shortcodes/expand/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/shortcodes/expand/"
+                href="phyaug/en/shortcodes/expand/"
                 />
   </url>
   
   <url>
-    <loc>/en/shortcodes/mermaid/</loc>
+    <loc>phyaug/en/shortcodes/mermaid/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/shortcodes/mermaid/"
+                href="phyaug/fr/shortcodes/mermaid/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/shortcodes/mermaid/"
+                href="phyaug/en/shortcodes/mermaid/"
                 />
   </url>
   
   <url>
-    <loc>/en/shortcodes/notice/</loc>
+    <loc>phyaug/en/shortcodes/notice/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/shortcodes/notice/"
+                href="phyaug/fr/shortcodes/notice/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/shortcodes/notice/"
+                href="phyaug/en/shortcodes/notice/"
                 />
   </url>
   
   <url>
-    <loc>/en/shortcodes/children/children-1/</loc>
+    <loc>phyaug/en/shortcodes/children/children-1/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/shortcodes/children/children-1/"
+                href="phyaug/fr/shortcodes/children/children-1/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/shortcodes/children/children-1/"
+                href="phyaug/en/shortcodes/children/children-1/"
                 />
   </url>
   
   <url>
-    <loc>/en/shortcodes/children/children-1/children-1-1/</loc>
+    <loc>phyaug/en/shortcodes/children/children-1/children-1-1/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/shortcodes/children/children-1/children-1-1/"
+                href="phyaug/fr/shortcodes/children/children-1/children-1-1/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/shortcodes/children/children-1/children-1-1/"
+                href="phyaug/en/shortcodes/children/children-1/children-1-1/"
                 />
   </url>
   
   <url>
-    <loc>/en/shortcodes/children/children-1/children-1-1/children-1-1-1/</loc>
+    <loc>phyaug/en/shortcodes/children/children-1/children-1-1/children-1-1-1/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/shortcodes/children/children-1/children-1-1/children-1-1-1/"
+                href="phyaug/fr/shortcodes/children/children-1/children-1-1/children-1-1-1/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/shortcodes/children/children-1/children-1-1/children-1-1-1/"
+                href="phyaug/en/shortcodes/children/children-1/children-1-1/children-1-1-1/"
                 />
   </url>
   
   <url>
-    <loc>/en/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/</loc>
+    <loc>phyaug/en/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/"
+                href="phyaug/fr/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/"
+                href="phyaug/en/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/"
                 />
   </url>
   
   <url>
-    <loc>/en/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/children-1-1-1-1-1/</loc>
+    <loc>phyaug/en/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/children-1-1-1-1-1/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/children-1-1-1-1-1/"
+                href="phyaug/fr/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/children-1-1-1-1-1/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/children-1-1-1-1-1/"
+                href="phyaug/en/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/children-1-1-1-1-1/"
                 />
   </url>
   
   <url>
-    <loc>/en/shortcodes/children/children-2/</loc>
+    <loc>phyaug/en/shortcodes/children/children-2/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/shortcodes/children/children-2/"
+                href="phyaug/fr/shortcodes/children/children-2/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/shortcodes/children/children-2/"
+                href="phyaug/en/shortcodes/children/children-2/"
                 />
   </url>
   
   <url>
-    <loc>/en/shortcodes/children/children-3/</loc>
+    <loc>phyaug/en/shortcodes/children/children-3/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/shortcodes/children/children-3/"
+                href="phyaug/fr/shortcodes/children/children-3/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/shortcodes/children/children-3/"
+                href="phyaug/en/shortcodes/children/children-3/"
                 />
   </url>
   
   <url>
-    <loc>/en/shortcodes/children/children-4/</loc>
+    <loc>phyaug/en/shortcodes/children/children-4/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/shortcodes/children/children-4/"
+                href="phyaug/fr/shortcodes/children/children-4/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/shortcodes/children/children-4/"
+                href="phyaug/en/shortcodes/children/children-4/"
                 />
   </url>
   
   <url>
-    <loc>/en/shortcodes/children/test/</loc>
+    <loc>phyaug/en/shortcodes/children/test/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/shortcodes/children/test/"
+                href="phyaug/fr/shortcodes/children/test/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/shortcodes/children/test/"
+                href="phyaug/en/shortcodes/children/test/"
                 />
   </url>
   
   <url>
-    <loc>/en/shortcodes/children/children-2/test3/</loc>
+    <loc>phyaug/en/shortcodes/children/children-2/test3/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/shortcodes/children/children-2/test3/"
+                href="phyaug/fr/shortcodes/children/children-2/test3/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/shortcodes/children/children-2/test3/"
+                href="phyaug/en/shortcodes/children/children-2/test3/"
                 />
   </url>
   
   <url>
-    <loc>/en/showcase/</loc>
+    <loc>phyaug/en/showcase/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/vitrine/"
+                href="phyaug/fr/vitrine/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/showcase/"
+                href="phyaug/en/showcase/"
                 />
   </url>
   
   <url>
-    <loc>/en/shortcodes/siteparam/</loc>
+    <loc>phyaug/en/shortcodes/siteparam/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/shortcodes/siteparam/"
+                href="phyaug/fr/shortcodes/siteparam/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/shortcodes/siteparam/"
+                href="phyaug/en/shortcodes/siteparam/"
                 />
   </url>
   
   <url>
-    <loc>/en/shortcodes/tabs/</loc>
+    <loc>phyaug/en/shortcodes/tabs/</loc>
   </url>
   
 </urlset>

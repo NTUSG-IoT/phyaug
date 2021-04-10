@@ -3,78 +3,78 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/zh/basics/</loc>
+    <loc>phyaug/zh/basics/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/basics/"
+                href="phyaug/en/basics/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/basics/"
+                href="phyaug/fr/basics/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/zh/basics/"
+                href="phyaug/zh/basics/"
                 />
   </url>
   
   <url>
-    <loc>/zh/categories/</loc>
+    <loc>phyaug/zh/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/categories/"
+                href="phyaug/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/categories/"
+                href="phyaug/fr/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/zh/categories/"
+                href="phyaug/zh/categories/"
                 />
   </url>
   
   <url>
-    <loc>/zh/</loc>
+    <loc>phyaug/zh/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/"
+                href="phyaug/en/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/"
+                href="phyaug/fr/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/zh/"
+                href="phyaug/zh/"
                 />
   </url>
   
   <url>
-    <loc>/zh/tags/</loc>
+    <loc>phyaug/zh/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/tags/"
+                href="phyaug/en/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/tags/"
+                href="phyaug/fr/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/zh/tags/"
+                href="phyaug/zh/tags/"
                 />
   </url>
   
