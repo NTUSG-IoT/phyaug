@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>PhyAug :: PhyAug</title>
+    <title>Archétypes :: PhyAug</title>
 
     
     <link href="/css/nucleus.css?1618028140" rel="stylesheet">
@@ -35,7 +35,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/">
+  <body class="" data-url="/cont/archetypes.fr/">
     <nav id="sidebar" class="">
 
 
@@ -257,7 +257,7 @@
   
     
     <li data-nav-id="/cont/" title="Content" class="dd-item
-        
+        parent
         
         
         ">
@@ -332,7 +332,7 @@
  
   
     
-      <li data-nav-id="/cont/archetypes.fr/" title="Archétypes" class="dd-item ">
+      <li data-nav-id="/cont/archetypes.fr/" title="Archétypes" class="dd-item active">
         <a href="/cont/archetypes.fr/">
         Archétypes
         
@@ -1254,55 +1254,113 @@
         <div id="overlay"></div>
         <div class="padding highlightable">
               
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>PhyAug</a> > <a href='/cont/'>Content</a> > Archétypes
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#archetypes-chapter">Chapitre</a></li>
+    <li><a href="#défaut">Défaut</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
         <div id="head-tags">
         
         </div>
         
         <div id="body-inner">
           
+            <h1>
+              
+              Archétypes
+            </h1>
+          
 
         
 
-<span id="sidebar-toggle-span">
-<a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fas fa-bars"></i> navigation</a>
-</span>
 
- 
-<h1 id="phyaug">PhyAug</h1>
-<p><a href="http://github.com/matcornic/hugo-theme-learn">Hugo-theme-learn</a> is a theme for <a href="https://gohugo.io/">Hugo</a>, a fast and modern static website engine written in Go. Where Hugo is often used for blogs, this multilingual-ready theme is <strong>fully designed for documentation</strong>.</p>
-<p>This theme is a partial porting of the <a href="http://learn.getgrav.org/">Learn theme</a> of <a href="https://getgrav.org/">Grav</a>, a modern flat-file CMS written in PHP.</p>
+<p>En utilisant la commande: <code>hugo new [chemin vers nouveau contenu]</code>, vous pouvez créer un nouveau fichier avec la date et le title automatiquement initialisé. Même si c&rsquo;est une fonctionnalité intéressante, elle reste limitée pour les auteurs actifs qui ont besoin de mieux : les <a href="https://gohugo.io/content/archetypes/">archetypes</a>.</p>
+<p>Les archétypes sont des squelettes de pages préconfigurées avec un Front Matter par défaut. Merci de vous référer à la documentation pour connaitre les différents types de page.</p>
+<h2 id="archetypes-chapter">Chapitre</h2>
+<p>Pour créer un chapitre, lancez les commandes suivantes</p>
+<pre><code>hugo new --kind chapter &lt;name&gt;/_index.md
+</code></pre><p>Cela crééra une page avec le Front Matter suivant:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">+++
+title = &#34;{{ replace .Name &#34;-&#34; &#34; &#34; | title }}&#34;
+date = {{ .Date }}
+weight = 5
+chapter = true
+pre = &#34;&lt;b&gt;X. &lt;/b&gt;&#34;
++++
 
-<div class="notices tip" ><p>Learn theme works with a <em>page tree structure</em> to organize content : All contents are pages, which belong to other pages. <a href="/cont/pages/">read more about this</a></p>
-</div>
+<span style="color:#75715e">### Chapter X
+</span><span style="color:#75715e"></span>
+# Some Chapter title
 
-<h2 id="main-features">Main features</h2>
-<ul>
-<li><a href="/basics/configuration/#activate-search">Automatic Search</a></li>
-<li><a href="/cont/i18n/">Multilingual mode</a></li>
-<li><strong>Unlimited menu levels</strong></li>
-<li><strong>Automatic next/prev buttons to navigate through menu entries</strong></li>
-<li><a href="/cont/markdown/">Image resizing, shadow&hellip;</a></li>
-<li><a href="/shortcodes/attachments/">Attachments files</a></li>
-<li><a href="/shortcodes/children/">List child pages</a></li>
-<li><a href="/shortcodes/mermaid/">Mermaid diagram</a> (flowchart, sequence, gantt)</li>
-<li><a href="/basics/style-customization/">Customizable look and feel and themes variants</a></li>
-<li><a href="/shortcodes/button/">Buttons</a>, <a href="/shortcodes/notice/">Tip/Note/Info/Warning boxes</a>, <a href="/shortcodes/expand/">Expand</a></li>
-</ul>
-<p><img src="https://github.com/matcornic/hugo-theme-learn/raw/master/images/screenshot.png?width=40pc&amp;classes=shadow" alt="Screenshot"></p>
-<h2 id="contribute-to-this-documentation">Contribute to this documentation</h2>
-<p>Feel free to update this content, just click the <strong>Edit this page</strong> link displayed on top right of each page, and pullrequest it</p>
+Lorem Ipsum.
+</code></pre></div><h2 id="défaut">Défaut</h2>
+<p>Pour créer une page classique, lancer l&rsquo;une des deux commandes suivantes</p>
+<pre><code># Soit
+hugo new &lt;chapter&gt;/&lt;name&gt;/_index.md
+# Ou
+hugo new &lt;chapter&gt;/&lt;name&gt;.md
+</code></pre><p>Cela crééra une page avec le Front Matter suivant:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">+++
+title = &#34;{{ replace .Name &#34;-&#34; &#34; &#34; | title }}&#34;
+date =  {{ .Date }}
+weight = 5
++++
 
-<div class="notices info" ><p>Your modification will be deployed automatically when merged.</p>
-</div>
+Lorem Ipsum.
+</code></pre></div>
 
-<h2 id="documentation-website">Documentation website</h2>
-<p>This current documentation has been statically generated with Hugo with a simple command : <code>hugo -t hugo-theme-learn</code> &ndash; source code is <a href="https://github.com/matcornic/hugo-theme-learn">available here at GitHub</a></p>
-
-<div class="notices note" ><p>Automatically published and hosted thanks to <a href="https://www.netlify.com/">Netlify</a>. Read more about <a href="https://www.netlify.com/blog/2015/07/30/hosting-hugo-on-netlifyinsanely-fast-deploys/">Automated HUGO deployments with Netlify</a></p>
-</div>
-
+<footer class="footline">
 	
-  
+</footer>
+
         
         </div>
         
@@ -1419,6 +1477,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -1433,6 +1492,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1466,6 +1528,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -1481,6 +1544,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -2066,8 +2132,10 @@
 	 
 	 
 		
+			<a class="nav nav-prev" href="/cont/archetypes/" title="Archetypes"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="/basics/" title="Basics" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="/cont/markdown/" title="Markdown syntax" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

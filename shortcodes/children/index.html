@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="Hugo 0.68.3" />
-    <meta name="description" content="Documentation for Hugo Learn Theme">
+    <meta name="description" content="List the child pages of a page">
 <meta name="author" content="Mathieu Cornic">
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>PhyAug :: PhyAug</title>
+    <title>Children :: PhyAug</title>
 
     
     <link href="/css/nucleus.css?1618028140" rel="stylesheet">
@@ -35,7 +35,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/">
+  <body class="" data-url="/shortcodes/children/">
     <nav id="sidebar" class="">
 
 
@@ -555,7 +555,7 @@
   
     
     <li data-nav-id="/shortcodes/" title="Shortcodes" class="dd-item
-        
+        parent
         
         
         ">
@@ -668,8 +668,8 @@
   
     
     <li data-nav-id="/shortcodes/children/" title="Children" class="dd-item
-        
-        
+        parent
+        active
         
         ">
       <a href="/shortcodes/children/">
@@ -1254,55 +1254,1404 @@
         <div id="overlay"></div>
         <div class="padding highlightable">
               
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>PhyAug</a> > <a href='/shortcodes/'>Shortcodes</a> > Children
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#demo">Demo</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
         <div id="head-tags">
         
         </div>
         
         <div id="body-inner">
           
+            <h1>
+              
+              Children
+            </h1>
+          
 
         
 
-<span id="sidebar-toggle-span">
-<a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fas fa-bars"></i> navigation</a>
-</span>
 
- 
-<h1 id="phyaug">PhyAug</h1>
-<p><a href="http://github.com/matcornic/hugo-theme-learn">Hugo-theme-learn</a> is a theme for <a href="https://gohugo.io/">Hugo</a>, a fast and modern static website engine written in Go. Where Hugo is often used for blogs, this multilingual-ready theme is <strong>fully designed for documentation</strong>.</p>
-<p>This theme is a partial porting of the <a href="http://learn.getgrav.org/">Learn theme</a> of <a href="https://getgrav.org/">Grav</a>, a modern flat-file CMS written in PHP.</p>
 
-<div class="notices tip" ><p>Learn theme works with a <em>page tree structure</em> to organize content : All contents are pages, which belong to other pages. <a href="/cont/pages/">read more about this</a></p>
-</div>
+	<p>Use the children shortcode to list the child pages of a page and the further descendants (children&rsquo;s children). By default, the shortcode displays links to the child pages.</p>
+<h2 id="usage">Usage</h2>
+<table>
+<thead>
+<tr>
+<th align="left">Parameter</th>
+<th align="left">Default</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">page</td>
+<td align="left"><em>current</em></td>
+<td align="left">Specify the page name (section name) to display children for</td>
+</tr>
+<tr>
+<td align="left">style</td>
+<td align="left">&ldquo;li&rdquo;</td>
+<td align="left">Choose the style used to display descendants. It could be any HTML tag name</td>
+</tr>
+<tr>
+<td align="left">showhidden</td>
+<td align="left">&ldquo;false&rdquo;</td>
+<td align="left">When true, child pages hidden from the menu will be displayed</td>
+</tr>
+<tr>
+<td align="left">description</td>
+<td align="left">&ldquo;false&rdquo;</td>
+<td align="left">Allows you to include a short text under each page in the list. When no description exists for the page, children shortcode takes the first 70 words of your content. <a href="https://gohugo.io/content/summaries/">Read more info about summaries on gohugo.io</a></td>
+</tr>
+<tr>
+<td align="left">depth</td>
+<td align="left">1</td>
+<td align="left">Enter a number to specify the depth of descendants to display. For example, if the value is 2, the shortcode will display 2 levels of child pages.  <strong>Tips:</strong> set 999 to get all descendants</td>
+</tr>
+<tr>
+<td align="left">sort</td>
+<td align="left">none</td>
+<td align="left">Sort children by <strong>Weight</strong> - to sort on menu order, <strong>Name</strong> - to sort alphabetically on menu label, <strong>Identifier</strong> - to sort alphabetically on identifier set in frontmatter, and <strong>URL</strong> - to sort by URL</td>
+</tr>
+</tbody>
+</table>
+<h2 id="demo">Demo</h2>
+<pre><code>{{% children  %}}
+</code></pre>
 
-<h2 id="main-features">Main features</h2>
-<ul>
-<li><a href="/basics/configuration/#activate-search">Automatic Search</a></li>
-<li><a href="/cont/i18n/">Multilingual mode</a></li>
-<li><strong>Unlimited menu levels</strong></li>
-<li><strong>Automatic next/prev buttons to navigate through menu entries</strong></li>
-<li><a href="/cont/markdown/">Image resizing, shadow&hellip;</a></li>
-<li><a href="/shortcodes/attachments/">Attachments files</a></li>
-<li><a href="/shortcodes/children/">List child pages</a></li>
-<li><a href="/shortcodes/mermaid/">Mermaid diagram</a> (flowchart, sequence, gantt)</li>
-<li><a href="/basics/style-customization/">Customizable look and feel and themes variants</a></li>
-<li><a href="/shortcodes/button/">Buttons</a>, <a href="/shortcodes/notice/">Tip/Note/Info/Warning boxes</a>, <a href="/shortcodes/expand/">Expand</a></li>
-</ul>
-<p><img src="https://github.com/matcornic/hugo-theme-learn/raw/master/images/screenshot.png?width=40pc&amp;classes=shadow" alt="Screenshot"></p>
-<h2 id="contribute-to-this-documentation">Contribute to this documentation</h2>
-<p>Feel free to update this content, just click the <strong>Edit this page</strong> link displayed on top right of each page, and pullrequest it</p>
 
-<div class="notices info" ><p>Your modification will be deployed automatically when merged.</p>
-</div>
 
-<h2 id="documentation-website">Documentation website</h2>
-<p>This current documentation has been statically generated with Hugo with a simple command : <code>hugo -t hugo-theme-learn</code> &ndash; source code is <a href="https://github.com/matcornic/hugo-theme-learn">available here at GitHub</a></p>
 
-<div class="notices note" ><p>Automatically published and hosted thanks to <a href="https://www.netlify.com/">Netlify</a>. Read more about <a href="https://www.netlify.com/blog/2015/07/30/hosting-hugo-on-netlifyinsanely-fast-deploys/">Automated HUGO deployments with Netlify</a></p>
-</div>
+
+
+
+<ul class="children children-li">
+	
 
 	
-  
+		
+			
+		
+	
+
+	
+
+	
+		
+	
+		
+			
+				
+<li>
+<a href="/shortcodes/children/children-1/" >page 1</a>
+</li>
+				
+
+				
+			
+			
+		
+	
+		
+			
+				
+<li>
+<a href="/shortcodes/children/children-2/" >page 2</a>
+</li>
+				
+
+				
+			
+			
+		
+	
+		
+			
+				
+<li>
+<a href="/shortcodes/children/children-3/" >page 3</a>
+</li>
+				
+
+				
+			
+			
+		
+	
+		
+		
+	
+		
+			
+				
+<li>
+<a href="/shortcodes/children/test/" >page test</a>
+</li>
+				
+
+				
+			
+			
+		
+	
+		
+			
+				
+<li>
+<a href="/shortcodes/children/test.fr/" >page test</a>
+</li>
+				
+
+				
+			
+			
+		
+	
+
+	
+</ul>
+
+
+<pre><code>{{% children description=&quot;true&quot; %}}
+</code></pre>
+
+
+
+
+
+
+
+<ul class="children children-li">
+	
+
+	
+		
+			
+		
+	
+
+	
+
+	
+		
+	
+		
+			
+				
+<li>
+<a href="/shortcodes/children/children-1/" >page 1</a>
+</li>
+				
+
+				
+					
+<p>This is a demo child page</p>
+					
+				
+			
+			
+		
+	
+		
+			
+				
+<li>
+<a href="/shortcodes/children/children-2/" >page 2</a>
+</li>
+				
+
+				
+					
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					
+				
+			
+			
+		
+	
+		
+			
+				
+<li>
+<a href="/shortcodes/children/children-3/" >page 3</a>
+</li>
+				
+
+				
+					
+<p>This is a demo child page</p>
+					
+				
+			
+			
+		
+	
+		
+		
+	
+		
+			
+				
+<li>
+<a href="/shortcodes/children/test/" >page test</a>
+</li>
+				
+
+				
+					
+<p>This is a page test</p>
+					
+				
+			
+			
+		
+	
+		
+			
+				
+<li>
+<a href="/shortcodes/children/test.fr/" >page test</a>
+</li>
+				
+
+				
+					
+<p>Ceci est une page test</p>
+					
+				
+			
+			
+		
+	
+
+	
+</ul>
+
+
+<pre><code>{{% children depth=&quot;3&quot; showhidden=&quot;true&quot; %}}
+</code></pre>
+
+
+
+
+
+
+
+<ul class="children children-li">
+	
+
+	
+		
+			
+		
+	
+
+	
+
+	
+		
+	
+		
+			
+				
+<li>
+<a href="/shortcodes/children/children-1/" >page 1</a>
+</li>
+				
+
+				
+			
+			
+
+				
+<ul>
+				
+
+				
+					
+				
+
+				
+
+				
+					
+	
+		
+			
+				
+<li>
+<a href="/shortcodes/children/children-1/children-1-1/" >page 1-1</a>
+</li>
+				
+
+				
+			
+			
+
+				
+<ul>
+				
+
+				
+					
+				
+
+				
+
+				
+					
+	
+		
+			
+				
+<li>
+<a href="/shortcodes/children/children-1/children-1-1/children-1-1-1/" >page 1-1-1</a>
+</li>
+				
+
+				
+			
+			
+		
+	
+
+				
+
+				
+</ul>
+				
+			
+		
+	
+
+				
+
+				
+</ul>
+				
+			
+		
+	
+		
+			
+				
+<li>
+<a href="/shortcodes/children/children-2/" >page 2</a>
+</li>
+				
+
+				
+			
+			
+
+				
+<ul>
+				
+
+				
+					
+				
+
+				
+
+				
+					
+	
+		
+			
+				
+<li>
+<a href="/shortcodes/children/children-2/test3/" >page test 3</a>
+</li>
+				
+
+				
+			
+			
+
+				
+<ul>
+				
+
+				
+					
+				
+
+				
+
+				
+					
+	
+
+				
+
+				
+</ul>
+				
+			
+		
+	
+		
+			
+				
+<li>
+<a href="/shortcodes/children/children-2/test3.fr/" >page test 3</a>
+</li>
+				
+
+				
+			
+			
+
+				
+<ul>
+				
+
+				
+					
+				
+
+				
+
+				
+					
+	
+
+				
+
+				
+</ul>
+				
+			
+		
+	
+
+				
+
+				
+</ul>
+				
+			
+		
+	
+		
+			
+				
+<li>
+<a href="/shortcodes/children/children-3/" >page 3</a>
+</li>
+				
+
+				
+			
+			
+
+				
+<ul>
+				
+
+				
+					
+				
+
+				
+
+				
+					
+	
+
+				
+
+				
+</ul>
+				
+			
+		
+	
+		
+			
+				
+<li>
+<a href="/shortcodes/children/children-4/" >page 4</a>
+</li>
+				
+
+				
+			
+			
+
+				
+<ul>
+				
+
+				
+					
+				
+
+				
+
+				
+					
+	
+
+				
+
+				
+</ul>
+				
+			
+		
+	
+		
+			
+				
+<li>
+<a href="/shortcodes/children/test/" >page test</a>
+</li>
+				
+
+				
+			
+			
+
+				
+<ul>
+				
+
+				
+					
+				
+
+				
+
+				
+					
+	
+
+				
+
+				
+</ul>
+				
+			
+		
+	
+		
+			
+				
+<li>
+<a href="/shortcodes/children/test.fr/" >page test</a>
+</li>
+				
+
+				
+			
+			
+
+				
+<ul>
+				
+
+				
+					
+				
+
+				
+
+				
+					
+	
+
+				
+
+				
+</ul>
+				
+			
+		
+	
+
+	
+</ul>
+
+
+<pre><code>{{% children style=&quot;h2&quot; depth=&quot;3&quot; description=&quot;true&quot; %}}
+</code></pre>
+
+
+
+
+
+
+
+<ul class="children children-h2">
+	
+
+	
+		
+			
+		
+	
+
+	
+
+	
+		
+	
+		
+			
+				
+					
+					
+
+<h2>
+<a href="/shortcodes/children/children-1/" >page 1</a>
+</h2>
+
+				
+
+				
+					
+<p>This is a demo child page</p>
+					
+				
+			
+			
+
+				
+
+				
+					
+				
+
+				
+
+				
+					
+	
+		
+			
+				
+					
+					
+
+<h3>
+<a href="/shortcodes/children/children-1/children-1-1/" >page 1-1</a>
+</h3>
+
+				
+
+				
+					
+<p>This is a demo child page</p>
+					
+				
+			
+			
+
+				
+
+				
+					
+				
+
+				
+
+				
+					
+	
+		
+			
+				
+					
+					
+
+<h4>
+<a href="/shortcodes/children/children-1/children-1-1/children-1-1-1/" >page 1-1-1</a>
+</h4>
+
+				
+
+				
+					
+<p>This is a demo child page</p>
+					
+				
+			
+			
+		
+	
+
+				
+
+				
+			
+		
+	
+
+				
+
+				
+			
+		
+	
+		
+			
+				
+					
+					
+
+<h2>
+<a href="/shortcodes/children/children-2/" >page 2</a>
+</h2>
+
+				
+
+				
+					
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					
+				
+			
+			
+
+				
+
+				
+					
+				
+
+				
+
+				
+					
+	
+		
+			
+				
+					
+					
+
+<h3>
+<a href="/shortcodes/children/children-2/test3/" >page test 3</a>
+</h3>
+
+				
+
+				
+					
+<p>This is a page test</p>
+					
+				
+			
+			
+
+				
+
+				
+					
+				
+
+				
+
+				
+					
+	
+
+				
+
+				
+			
+		
+	
+		
+			
+				
+					
+					
+
+<h3>
+<a href="/shortcodes/children/children-2/test3.fr/" >page test 3</a>
+</h3>
+
+				
+
+				
+					
+<p>Ceci est une page test</p>
+					
+				
+			
+			
+
+				
+
+				
+					
+				
+
+				
+
+				
+					
+	
+
+				
+
+				
+			
+		
+	
+
+				
+
+				
+			
+		
+	
+		
+			
+				
+					
+					
+
+<h2>
+<a href="/shortcodes/children/children-3/" >page 3</a>
+</h2>
+
+				
+
+				
+					
+<p>This is a demo child page</p>
+					
+				
+			
+			
+
+				
+
+				
+					
+				
+
+				
+
+				
+					
+	
+
+				
+
+				
+			
+		
+	
+		
+		
+	
+		
+			
+				
+					
+					
+
+<h2>
+<a href="/shortcodes/children/test/" >page test</a>
+</h2>
+
+				
+
+				
+					
+<p>This is a page test</p>
+					
+				
+			
+			
+
+				
+
+				
+					
+				
+
+				
+
+				
+					
+	
+
+				
+
+				
+			
+		
+	
+		
+			
+				
+					
+					
+
+<h2>
+<a href="/shortcodes/children/test.fr/" >page test</a>
+</h2>
+
+				
+
+				
+					
+<p>Ceci est une page test</p>
+					
+				
+			
+			
+
+				
+
+				
+					
+				
+
+				
+
+				
+					
+	
+
+				
+
+				
+			
+		
+	
+
+	
+</ul>
+
+
+<pre><code>{{% children style=&quot;div&quot; depth=&quot;999&quot; %}}
+</code></pre>
+
+
+
+
+
+
+
+<ul class="children children-div">
+	
+
+	
+		
+			
+		
+	
+
+	
+
+	
+		
+	
+		
+			
+				
+<div>
+<a href="/shortcodes/children/children-1/" >page 1</a>
+</div>
+				
+
+				
+			
+			
+
+				
+
+				
+					
+				
+
+				
+
+				
+					
+	
+		
+			
+				
+<div>
+<a href="/shortcodes/children/children-1/children-1-1/" >page 1-1</a>
+</div>
+				
+
+				
+			
+			
+
+				
+
+				
+					
+				
+
+				
+
+				
+					
+	
+		
+			
+				
+<div>
+<a href="/shortcodes/children/children-1/children-1-1/children-1-1-1/" >page 1-1-1</a>
+</div>
+				
+
+				
+			
+			
+
+				
+
+				
+					
+				
+
+				
+
+				
+					
+	
+		
+			
+				
+<div>
+<a href="/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/" >page 1-1-1-1</a>
+</div>
+				
+
+				
+			
+			
+
+				
+
+				
+					
+				
+
+				
+
+				
+					
+	
+		
+			
+				
+<div>
+<a href="/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/children-1-1-1-1-1/" >page 1-1-1-1-1</a>
+</div>
+				
+
+				
+			
+			
+
+				
+
+				
+					
+				
+
+				
+
+				
+					
+	
+
+				
+
+				
+			
+		
+	
+
+				
+
+				
+			
+		
+	
+
+				
+
+				
+			
+		
+	
+
+				
+
+				
+			
+		
+	
+
+				
+
+				
+			
+		
+	
+		
+			
+				
+<div>
+<a href="/shortcodes/children/children-2/" >page 2</a>
+</div>
+				
+
+				
+			
+			
+
+				
+
+				
+					
+				
+
+				
+
+				
+					
+	
+		
+			
+				
+<div>
+<a href="/shortcodes/children/children-2/test3/" >page test 3</a>
+</div>
+				
+
+				
+			
+			
+
+				
+
+				
+					
+				
+
+				
+
+				
+					
+	
+
+				
+
+				
+			
+		
+	
+		
+			
+				
+<div>
+<a href="/shortcodes/children/children-2/test3.fr/" >page test 3</a>
+</div>
+				
+
+				
+			
+			
+
+				
+
+				
+					
+				
+
+				
+
+				
+					
+	
+
+				
+
+				
+			
+		
+	
+
+				
+
+				
+			
+		
+	
+		
+			
+				
+<div>
+<a href="/shortcodes/children/children-3/" >page 3</a>
+</div>
+				
+
+				
+			
+			
+
+				
+
+				
+					
+				
+
+				
+
+				
+					
+	
+
+				
+
+				
+			
+		
+	
+		
+		
+	
+		
+			
+				
+<div>
+<a href="/shortcodes/children/test/" >page test</a>
+</div>
+				
+
+				
+			
+			
+
+				
+
+				
+					
+				
+
+				
+
+				
+					
+	
+
+				
+
+				
+			
+		
+	
+		
+			
+				
+<div>
+<a href="/shortcodes/children/test.fr/" >page test</a>
+</div>
+				
+
+				
+			
+			
+
+				
+
+				
+					
+				
+
+				
+
+				
+					
+	
+
+				
+
+				
+			
+		
+	
+
+	
+</ul>
+
+
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
         
         </div>
         
@@ -1629,6 +2978,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -1643,6 +2993,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1708,6 +3061,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -1722,6 +3076,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -2066,8 +3423,10 @@
 	 
 	 
 		
+			<a class="nav nav-prev" href="/shortcodes/button.fr/" title="Button (Bouton)"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="/basics/" title="Basics" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="/shortcodes/children/children-1/" title="page 1" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -2107,4 +3466,3 @@
 </script>
   </body>
 </html>
-

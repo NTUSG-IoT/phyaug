@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>PhyAug :: PhyAug</title>
+    <title>Tags :: PhyAug</title>
 
     
     <link href="/css/nucleus.css?1618028140" rel="stylesheet">
@@ -35,7 +35,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/">
+  <body class="" data-url="/cont/tags/">
     <nav id="sidebar" class="">
 
 
@@ -257,7 +257,7 @@
   
     
     <li data-nav-id="/cont/" title="Content" class="dd-item
-        
+        parent
         
         
         ">
@@ -505,7 +505,7 @@
  
   
     
-      <li data-nav-id="/cont/tags/" title="Tags" class="dd-item ">
+      <li data-nav-id="/cont/tags/" title="Tags" class="dd-item active">
         <a href="/cont/tags/">
         Tags
         
@@ -1254,55 +1254,107 @@
         <div id="overlay"></div>
         <div class="padding highlightable">
               
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>PhyAug</a> > <a href='/cont/'>Content</a> > Tags
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#configuration">Configuration</a></li>
+    <li><a href="#behavior">Behavior</a></li>
+    <li><a href="#list-all-the-tags">List all the tags</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
         <div id="head-tags">
         
+<div class="tags">
+
+  <a class="tag-link" href="/tags/documentation">documentation</a>
+
+  <a class="tag-link" href="/tags/tutorial">tutorial</a>
+
+</div>
+
         </div>
         
         <div id="body-inner">
           
+            <h1>
+              
+              Tags
+            </h1>
+          
 
         
 
-<span id="sidebar-toggle-span">
-<a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fas fa-bars"></i> navigation</a>
-</span>
 
- 
-<h1 id="phyaug">PhyAug</h1>
-<p><a href="http://github.com/matcornic/hugo-theme-learn">Hugo-theme-learn</a> is a theme for <a href="https://gohugo.io/">Hugo</a>, a fast and modern static website engine written in Go. Where Hugo is often used for blogs, this multilingual-ready theme is <strong>fully designed for documentation</strong>.</p>
-<p>This theme is a partial porting of the <a href="http://learn.getgrav.org/">Learn theme</a> of <a href="https://getgrav.org/">Grav</a>, a modern flat-file CMS written in PHP.</p>
+<p><em>Learn theme</em> support one default taxonomy of gohugo: the <em>tag</em> feature.</p>
+<h2 id="configuration">Configuration</h2>
+<p>Just add tags to any page:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">---
+date: 2018-11-29T08:41:44+01:00
+title: Theme tutorial
+weight: 15
+tags: [&#34;tutorial&#34;, &#34;theme&#34;] 
+---
+</code></pre></div><h2 id="behavior">Behavior</h2>
+<p>The tags are displayed at the top of the page, in their insertion order.</p>
+<p>Each tag is a link to a <em>Taxonomy</em> page displaying all the articles with the given tag.</p>
+<h2 id="list-all-the-tags">List all the tags</h2>
+<p>In the <code>config.toml</code>  file you can add a shortcut to display all the tags</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[[<span style="color:#a6e22e">menu</span>.<span style="color:#a6e22e">shortcuts</span>]]
+<span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;&lt;i class=&#39;fas fa-tags&#39;&gt;&lt;/i&gt; Tags&#34;</span>
+<span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;/tags&#34;</span>
+<span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">30</span>
+</code></pre></div>
 
-<div class="notices tip" ><p>Learn theme works with a <em>page tree structure</em> to organize content : All contents are pages, which belong to other pages. <a href="/cont/pages/">read more about this</a></p>
-</div>
-
-<h2 id="main-features">Main features</h2>
-<ul>
-<li><a href="/basics/configuration/#activate-search">Automatic Search</a></li>
-<li><a href="/cont/i18n/">Multilingual mode</a></li>
-<li><strong>Unlimited menu levels</strong></li>
-<li><strong>Automatic next/prev buttons to navigate through menu entries</strong></li>
-<li><a href="/cont/markdown/">Image resizing, shadow&hellip;</a></li>
-<li><a href="/shortcodes/attachments/">Attachments files</a></li>
-<li><a href="/shortcodes/children/">List child pages</a></li>
-<li><a href="/shortcodes/mermaid/">Mermaid diagram</a> (flowchart, sequence, gantt)</li>
-<li><a href="/basics/style-customization/">Customizable look and feel and themes variants</a></li>
-<li><a href="/shortcodes/button/">Buttons</a>, <a href="/shortcodes/notice/">Tip/Note/Info/Warning boxes</a>, <a href="/shortcodes/expand/">Expand</a></li>
-</ul>
-<p><img src="https://github.com/matcornic/hugo-theme-learn/raw/master/images/screenshot.png?width=40pc&amp;classes=shadow" alt="Screenshot"></p>
-<h2 id="contribute-to-this-documentation">Contribute to this documentation</h2>
-<p>Feel free to update this content, just click the <strong>Edit this page</strong> link displayed on top right of each page, and pullrequest it</p>
-
-<div class="notices info" ><p>Your modification will be deployed automatically when merged.</p>
-</div>
-
-<h2 id="documentation-website">Documentation website</h2>
-<p>This current documentation has been statically generated with Hugo with a simple command : <code>hugo -t hugo-theme-learn</code> &ndash; source code is <a href="https://github.com/matcornic/hugo-theme-learn">available here at GitHub</a></p>
-
-<div class="notices note" ><p>Automatically published and hosted thanks to <a href="https://www.netlify.com/">Netlify</a>. Read more about <a href="https://www.netlify.com/blog/2015/07/30/hosting-hugo-on-netlifyinsanely-fast-deploys/">Automated HUGO deployments with Netlify</a></p>
-</div>
-
+<footer class="footline">
 	
-  
+</footer>
+
         
         </div>
         
@@ -1419,6 +1471,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -1433,6 +1486,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1594,6 +1650,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -1609,6 +1666,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -2066,8 +2126,10 @@
 	 
 	 
 		
+			<a class="nav nav-prev" href="/cont/i18n/" title="Multilingual and i18n"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="/basics/" title="Basics" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="/cont/tags.fr/" title="Tags" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>PhyAug :: PhyAug</title>
+    <title>Pages organization :: PhyAug</title>
 
     
     <link href="/css/nucleus.css?1618028140" rel="stylesheet">
@@ -35,7 +35,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/">
+  <body class="" data-url="/cont/pages/">
     <nav id="sidebar" class="">
 
 
@@ -257,7 +257,7 @@
   
     
     <li data-nav-id="/cont/" title="Content" class="dd-item
-        
+        parent
         
         
         ">
@@ -286,8 +286,8 @@
   
     
     <li data-nav-id="/cont/pages/" title="Pages organization" class="dd-item
-        
-        
+        parent
+        active
         
         ">
       <a href="/cont/pages/">
@@ -1254,55 +1254,205 @@
         <div id="overlay"></div>
         <div class="padding highlightable">
               
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>PhyAug</a> > <a href='/cont/'>Content</a> > Pages organization
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#folders">Folders</a></li>
+    <li><a href="#types">Types</a></li>
+    <li><a href="#create-your-project">Create your project</a></li>
+    <li><a href="#front-matter-configuration">Front Matter configuration</a>
+      <ul>
+        <li><a href="#add-icon-to-a-menu-entry">Add icon to a menu entry</a></li>
+        <li><a href="#ordering-sibling-menupage-entries">Ordering sibling menu/page entries</a></li>
+        <li><a href="#using-a-custom-title-for-menu-entries">Using a custom title for menu entries</a></li>
+      </ul>
+    </li>
+    <li><a href="#homepage">Homepage</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
         <div id="head-tags">
         
         </div>
         
         <div id="body-inner">
           
+            <h1>
+              
+              Pages organization
+            </h1>
+          
 
         
 
-<span id="sidebar-toggle-span">
-<a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fas fa-bars"></i> navigation</a>
-</span>
 
- 
-<h1 id="phyaug">PhyAug</h1>
-<p><a href="http://github.com/matcornic/hugo-theme-learn">Hugo-theme-learn</a> is a theme for <a href="https://gohugo.io/">Hugo</a>, a fast and modern static website engine written in Go. Where Hugo is often used for blogs, this multilingual-ready theme is <strong>fully designed for documentation</strong>.</p>
-<p>This theme is a partial porting of the <a href="http://learn.getgrav.org/">Learn theme</a> of <a href="https://getgrav.org/">Grav</a>, a modern flat-file CMS written in PHP.</p>
 
-<div class="notices tip" ><p>Learn theme works with a <em>page tree structure</em> to organize content : All contents are pages, which belong to other pages. <a href="/cont/pages/">read more about this</a></p>
+	<p>In <strong>Hugo</strong>, pages are the core of your site. Once it is configured, pages are definitely the added value to your documentation site.</p>
+<h2 id="folders">Folders</h2>
+<p>Organize your site like <a href="https://gohugo.io/content/organization/">any other Hugo project</a>. Typically, you will have a <em>content</em> folder with all your pages.</p>
+<pre><code>content
+├── level-one
+│   ├── level-two
+│   │   ├── level-three
+│   │   │   ├── level-four
+│   │   │   │   ├── _index.md       &lt;-- /level-one/level-two/level-three/level-four
+│   │   │   │   ├── page-4-a.md     &lt;-- /level-one/level-two/level-three/level-four/page-4-a
+│   │   │   │   ├── page-4-b.md     &lt;-- /level-one/level-two/level-three/level-four/page-4-b
+│   │   │   │   └── page-4-c.md     &lt;-- /level-one/level-two/level-three/level-four/page-4-c
+│   │   │   ├── _index.md           &lt;-- /level-one/level-two/level-three
+│   │   │   ├── page-3-a.md         &lt;-- /level-one/level-two/level-three/page-3-a
+│   │   │   ├── page-3-b.md         &lt;-- /level-one/level-two/level-three/page-3-b
+│   │   │   └── page-3-c.md         &lt;-- /level-one/level-two/level-three/page-3-c
+│   │   ├── _index.md               &lt;-- /level-one/level-two
+│   │   ├── page-2-a.md             &lt;-- /level-one/level-two/page-2-a
+│   │   ├── page-2-b.md             &lt;-- /level-one/level-two/page-2-b
+│   │   └── page-2-c.md             &lt;-- /level-one/level-two/page-2-c
+│   ├── _index.md                   &lt;-- /level-one
+│   ├── page-1-a.md                 &lt;-- /level-one/page-1-a
+│   ├── page-1-b.md                 &lt;-- /level-one/page-1-b
+│   └── page-1-c.md                 &lt;-- /level-one/page-1-c
+├── _index.md                       &lt;-- /
+└── page-top.md                     &lt;-- /page-top
+</code></pre>
+
+<div class="notices note" ><p><code>_index.md</code> is required in each folder, it’s your “folder home page”</p>
 </div>
 
-<h2 id="main-features">Main features</h2>
-<ul>
-<li><a href="/basics/configuration/#activate-search">Automatic Search</a></li>
-<li><a href="/cont/i18n/">Multilingual mode</a></li>
-<li><strong>Unlimited menu levels</strong></li>
-<li><strong>Automatic next/prev buttons to navigate through menu entries</strong></li>
-<li><a href="/cont/markdown/">Image resizing, shadow&hellip;</a></li>
-<li><a href="/shortcodes/attachments/">Attachments files</a></li>
-<li><a href="/shortcodes/children/">List child pages</a></li>
-<li><a href="/shortcodes/mermaid/">Mermaid diagram</a> (flowchart, sequence, gantt)</li>
-<li><a href="/basics/style-customization/">Customizable look and feel and themes variants</a></li>
-<li><a href="/shortcodes/button/">Buttons</a>, <a href="/shortcodes/notice/">Tip/Note/Info/Warning boxes</a>, <a href="/shortcodes/expand/">Expand</a></li>
-</ul>
-<p><img src="https://github.com/matcornic/hugo-theme-learn/raw/master/images/screenshot.png?width=40pc&amp;classes=shadow" alt="Screenshot"></p>
-<h2 id="contribute-to-this-documentation">Contribute to this documentation</h2>
-<p>Feel free to update this content, just click the <strong>Edit this page</strong> link displayed on top right of each page, and pullrequest it</p>
+<h2 id="types">Types</h2>
+<p><strong>Hugo-theme-learn</strong> defines two types of pages. <em>Default</em> and <em>Chapter</em>. Both can be used at any level of the documentation, the only difference being layout display.</p>
+<p>A <strong>Chapter</strong> displays a page meant to be used as introduction for a set of child pages. Commonly, it contains a simple title and a catch line to define content that can be found under it.
+You can define any HTML as prefix for the menu. In the example below, it&rsquo;s just a number but that could be an <a href="https://fortawesome.github.io/Font-Awesome/">icon</a>.</p>
+<p><img src="/en/cont/pages/images/pages-chapter.png?width=50pc" alt="Chapter page"></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">+++
+title = &#34;Basics&#34;
+chapter = true
+weight = 5
+pre = &#34;&lt;b&gt;1. &lt;/b&gt;&#34;
++++
 
-<div class="notices info" ><p>Your modification will be deployed automatically when merged.</p>
-</div>
+<span style="color:#75715e">### Chapter 1
+</span><span style="color:#75715e"></span>
+# Basics
 
-<h2 id="documentation-website">Documentation website</h2>
-<p>This current documentation has been statically generated with Hugo with a simple command : <code>hugo -t hugo-theme-learn</code> &ndash; source code is <a href="https://github.com/matcornic/hugo-theme-learn">available here at GitHub</a></p>
+Discover what this Hugo theme is all about and the core-concepts behind it.
+</code></pre></div><p>To tell <strong>Hugo-theme-learn</strong> to consider a page as a chapter, set <code>chapter=true</code> in the Front Matter of the page.</p>
+<p>A <strong>Default</strong> page is any other content page.</p>
+<p><img src="/en/cont/pages/images/pages-default.png?width=50pc" alt="Default page"></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#960050;background-color:#1e0010">+++</span>
+<span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;Installation&#34;</span>
+<span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">15</span>
+<span style="color:#960050;background-color:#1e0010">+++</span>
+</code></pre></div><p>The following steps are here to help you initialize your new website. If you don&rsquo;t know Hugo at all, we strongly suggest you to train by following this <a href="https://gohugo.io/overview/quickstart/">great documentation for beginners</a>.</p>
+<h2 id="create-your-project">Create your project</h2>
+<p>Hugo provides a <code>new</code> command to create a new website.</p>
+<pre><code>hugo new site &lt;new_project&gt;
+</code></pre><p><strong>Hugo-theme-learn</strong> provides <a href="/cont/archetypes/">archetypes</a> to help you create this kind of pages.</p>
+<h2 id="front-matter-configuration">Front Matter configuration</h2>
+<p>Each Hugo page has to define a <a href="https://gohugo.io/content/front-matter/">Front Matter</a> in <em>yaml</em>, <em>toml</em> or <em>json</em>.</p>
+<p><strong>Hugo-theme-learn</strong> uses the following parameters on top of Hugo ones :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#960050;background-color:#1e0010">+++</span>
+<span style="color:#75715e"># Table of content (toc) is enabled by default. Set this parameter to true to disable it.</span>
+<span style="color:#75715e"># Note: Toc is always disabled for chapter pages</span>
+<span style="color:#a6e22e">disableToc</span> = <span style="color:#e6db74">&#34;false&#34;</span>
+<span style="color:#75715e"># If set, this will be used for the page&#39;s menu entry (instead of the `title` attribute)</span>
+<span style="color:#a6e22e">menuTitle</span> = <span style="color:#e6db74">&#34;&#34;</span>
+<span style="color:#75715e"># The title of the page in menu will be prefixed by this HTML content</span>
+<span style="color:#a6e22e">pre</span> = <span style="color:#e6db74">&#34;&#34;</span>
+<span style="color:#75715e"># The title of the page in menu will be postfixed by this HTML content</span>
+<span style="color:#a6e22e">post</span> = <span style="color:#e6db74">&#34;&#34;</span>
+<span style="color:#75715e"># Set the page as a chapter, changing the way it&#39;s displayed</span>
+<span style="color:#a6e22e">chapter</span> = <span style="color:#66d9ef">false</span>
+<span style="color:#75715e"># Hide a menu entry by setting this to true</span>
+<span style="color:#a6e22e">hidden</span> = <span style="color:#66d9ef">false</span>
+<span style="color:#75715e"># Display name of this page modifier. If set, it will be displayed in the footer.</span>
+<span style="color:#a6e22e">LastModifierDisplayName</span> = <span style="color:#e6db74">&#34;&#34;</span>
+<span style="color:#75715e"># Email of this page modifier. If set with LastModifierDisplayName, it will be displayed in the footer</span>
+<span style="color:#a6e22e">LastModifierEmail</span> = <span style="color:#e6db74">&#34;&#34;</span>
+<span style="color:#960050;background-color:#1e0010">+++</span>
+</code></pre></div><h3 id="add-icon-to-a-menu-entry">Add icon to a menu entry</h3>
+<p>In the page frontmatter, add a <code>pre</code> param to insert any HTML code before the menu label. The example below uses the Github icon.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#960050;background-color:#1e0010">+++</span>
+<span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;Github repo&#34;</span>
+<span style="color:#a6e22e">pre</span> = <span style="color:#e6db74">&#34;&lt;i class=&#39;fab fa-github&#39;&gt;&lt;/i&gt; &#34;</span>
+<span style="color:#960050;background-color:#1e0010">+++</span>
+</code></pre></div><p><img src="/en/cont/pages/images/frontmatter-icon.png" alt="Title with icon"></p>
+<h3 id="ordering-sibling-menupage-entries">Ordering sibling menu/page entries</h3>
+<p>Hugo provides a <a href="https://gohugo.io/content/ordering/">flexible way</a> to handle order for your pages.</p>
+<p>The simplest way is to set <code>weight</code> parameter to a number.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#960050;background-color:#1e0010">+++</span>
+<span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;My page&#34;</span>
+<span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">5</span>
+<span style="color:#960050;background-color:#1e0010">+++</span>
+</code></pre></div><h3 id="using-a-custom-title-for-menu-entries">Using a custom title for menu entries</h3>
+<p>By default, <strong>Hugo-theme-learn</strong> will use a page&rsquo;s <code>title</code> attribute for the menu item (or <code>linkTitle</code> if defined).</p>
+<p>But a page&rsquo;s title has to be descriptive on its own while the menu is a hierarchy.
+We&rsquo;ve added the <code>menuTitle</code> parameter for that purpose:</p>
+<p>For example (for a page named <code>content/install/linux.md</code>):</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#960050;background-color:#1e0010">+++</span>
+<span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;Install on Linux&#34;</span>
+<span style="color:#a6e22e">menuTitle</span> = <span style="color:#e6db74">&#34;Linux&#34;</span>
+<span style="color:#960050;background-color:#1e0010">+++</span>
+</code></pre></div><h2 id="homepage">Homepage</h2>
+<p>To configure your home page, you basically have three choices:</p>
+<ol>
+<li>Create an <code>_index.md</code> document in <code>content</code> folder and fill the file with <em>Markdown content</em></li>
+<li>Create an <code>index.html</code> file in the <code>static</code> folder and fill the file with <em>HTML content</em></li>
+<li>Configure your server to automatically redirect home page to one your documentation page</li>
+</ol>
 
-<div class="notices note" ><p>Automatically published and hosted thanks to <a href="https://www.netlify.com/">Netlify</a>. Read more about <a href="https://www.netlify.com/blog/2015/07/30/hosting-hugo-on-netlifyinsanely-fast-deploys/">Automated HUGO deployments with Netlify</a></p>
-</div>
 
+
+
+
+<footer class=" footline" >
 	
-  
+</footer>
+
         
         </div>
         
@@ -1419,6 +1569,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -1433,6 +1584,7 @@
             
             
                 
+                    
                     
                 
                 
@@ -1449,6 +1601,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -2066,8 +2221,10 @@
 	 
 	 
 		
+			<a class="nav nav-prev" href="/cont/" title="Content"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="/basics/" title="Basics" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="/cont/archetypes/" title="Archetypes" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -2107,4 +2264,3 @@
 </script>
   </body>
 </html>
-

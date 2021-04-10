@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="Hugo 0.68.3" />
-    <meta name="description" content="Documentation for Hugo Learn Theme">
+    <meta name="description" content="Generation of diagram and flowchart from text in a similar manner as markdown">
 <meta name="author" content="Mathieu Cornic">
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>PhyAug :: PhyAug</title>
+    <title>Mermaid :: PhyAug</title>
 
     
     <link href="/css/nucleus.css?1618028140" rel="stylesheet">
@@ -35,7 +35,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/">
+  <body class="" data-url="/shortcodes/mermaid/">
     <nav id="sidebar" class="">
 
 
@@ -555,7 +555,7 @@
   
     
     <li data-nav-id="/shortcodes/" title="Shortcodes" class="dd-item
-        
+        parent
         
         
         ">
@@ -1074,7 +1074,7 @@
  
   
     
-      <li data-nav-id="/shortcodes/mermaid/" title="Mermaid" class="dd-item ">
+      <li data-nav-id="/shortcodes/mermaid/" title="Mermaid" class="dd-item active">
         <a href="/shortcodes/mermaid/">
         Mermaid
         
@@ -1254,55 +1254,281 @@
         <div id="overlay"></div>
         <div class="padding highlightable">
               
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>PhyAug</a> > <a href='/shortcodes/'>Shortcodes</a> > Mermaid
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#flowchart-example">Flowchart example</a></li>
+    <li><a href="#sequence-example">Sequence example</a></li>
+    <li><a href="#gantt-example">GANTT Example</a>
+      <ul>
+        <li><a href="#class-example">Class example</a></li>
+        <li><a href="#git-example">Git example</a></li>
+        <li><a href="#state-diagrams">State Diagrams</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
         <div id="head-tags">
         
         </div>
         
         <div id="body-inner">
           
+            <h1>
+              
+              Mermaid
+            </h1>
+          
 
         
 
-<span id="sidebar-toggle-span">
-<a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fas fa-bars"></i> navigation</a>
-</span>
 
- 
-<h1 id="phyaug">PhyAug</h1>
-<p><a href="http://github.com/matcornic/hugo-theme-learn">Hugo-theme-learn</a> is a theme for <a href="https://gohugo.io/">Hugo</a>, a fast and modern static website engine written in Go. Where Hugo is often used for blogs, this multilingual-ready theme is <strong>fully designed for documentation</strong>.</p>
-<p>This theme is a partial porting of the <a href="http://learn.getgrav.org/">Learn theme</a> of <a href="https://getgrav.org/">Grav</a>, a modern flat-file CMS written in PHP.</p>
+<p><a href="https://mermaidjs.github.io/">Mermaid</a> is a library helping you to generate diagram and flowcharts from text, in a similar manner as Markdown.</p>
+<p>Just insert your mermaid code in the <code>mermaid</code> shortcode and that&rsquo;s it.</p>
+<h2 id="flowchart-example">Flowchart example</h2>
+<pre><code>{{&lt;mermaid align=&quot;left&quot;&gt;}}
+graph LR;
+    A[Hard edge] --&gt;|Link text| B(Round edge)
+    B --&gt; C{Decision}
+    C --&gt;|One| D[Result one]
+    C --&gt;|Two| E[Result two]
+{{&lt; /mermaid &gt;}}
+</code></pre>
+<p>renders as</p>
 
-<div class="notices tip" ><p>Learn theme works with a <em>page tree structure</em> to organize content : All contents are pages, which belong to other pages. <a href="/cont/pages/">read more about this</a></p>
+<div class="mermaid" align="left">
+graph LR;
+    A[Hard edge] -->|Link text| B(Round edge)
+    B --> C{Decision}
+    C -->|One| D[Result one]
+    C -->|Two| E[Result two]
 </div>
 
-<h2 id="main-features">Main features</h2>
-<ul>
-<li><a href="/basics/configuration/#activate-search">Automatic Search</a></li>
-<li><a href="/cont/i18n/">Multilingual mode</a></li>
-<li><strong>Unlimited menu levels</strong></li>
-<li><strong>Automatic next/prev buttons to navigate through menu entries</strong></li>
-<li><a href="/cont/markdown/">Image resizing, shadow&hellip;</a></li>
-<li><a href="/shortcodes/attachments/">Attachments files</a></li>
-<li><a href="/shortcodes/children/">List child pages</a></li>
-<li><a href="/shortcodes/mermaid/">Mermaid diagram</a> (flowchart, sequence, gantt)</li>
-<li><a href="/basics/style-customization/">Customizable look and feel and themes variants</a></li>
-<li><a href="/shortcodes/button/">Buttons</a>, <a href="/shortcodes/notice/">Tip/Note/Info/Warning boxes</a>, <a href="/shortcodes/expand/">Expand</a></li>
-</ul>
-<p><img src="https://github.com/matcornic/hugo-theme-learn/raw/master/images/screenshot.png?width=40pc&amp;classes=shadow" alt="Screenshot"></p>
-<h2 id="contribute-to-this-documentation">Contribute to this documentation</h2>
-<p>Feel free to update this content, just click the <strong>Edit this page</strong> link displayed on top right of each page, and pullrequest it</p>
+<h2 id="sequence-example">Sequence example</h2>
+<pre><code>{{&lt; mermaid &gt;}}
+sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice-&gt;&gt;John: Hello John, how are you?
+    loop Healthcheck
+        John-&gt;John: Fight against hypochondria
+    end
+    Note right of John: Rational thoughts &lt;br/&gt;prevail...
+    John--&gt;Alice: Great!
+    John-&gt;Bob: How about you?
+    Bob--&gt;John: Jolly good!
+{{&lt; /mermaid &gt;}}
+</code></pre>
+<p>renders as</p>
 
-<div class="notices info" ><p>Your modification will be deployed automatically when merged.</p>
+<div class="mermaid" align="center">
+sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice->>John: Hello John, how are you?
+    loop Healthcheck
+        John->John: Fight against hypochondria
+    end
+    Note right of John: Rational thoughts <br/>prevail...
+    John-->Alice: Great!
+    John->Bob: How about you?
+    Bob-->John: Jolly good!
 </div>
 
-<h2 id="documentation-website">Documentation website</h2>
-<p>This current documentation has been statically generated with Hugo with a simple command : <code>hugo -t hugo-theme-learn</code> &ndash; source code is <a href="https://github.com/matcornic/hugo-theme-learn">available here at GitHub</a></p>
+<h2 id="gantt-example">GANTT Example</h2>
+<pre><code>{{&lt; mermaid &gt;}}
+gantt
+        dateFormat  YYYY-MM-DD
+        title Adding GANTT diagram functionality to mermaid
+        section A section
+        Completed task            :done,    des1, 2014-01-06,2014-01-08
+        Active task               :active,  des2, 2014-01-09, 3d
+        Future task               :         des3, after des2, 5d
+        Future task2               :         des4, after des3, 5d
+        section Critical tasks
+        Completed task in the critical line :crit, done, 2014-01-06,24h
+        Implement parser and jison          :crit, done, after des1, 2d
+        Create tests for parser             :crit, active, 3d
+        Future task in critical line        :crit, 5d
+        Create tests for renderer           :2d
+        Add to mermaid                      :1d
+{{&lt; /mermaid &gt;}}
+</code></pre>
+<p>renders as</p>
 
-<div class="notices note" ><p>Automatically published and hosted thanks to <a href="https://www.netlify.com/">Netlify</a>. Read more about <a href="https://www.netlify.com/blog/2015/07/30/hosting-hugo-on-netlifyinsanely-fast-deploys/">Automated HUGO deployments with Netlify</a></p>
+<div class="mermaid" align="center">
+gantt
+        dateFormat  YYYY-MM-DD
+        title Adding GANTT diagram functionality to mermaid
+        section A section
+        Completed task            :done,    des1, 2014-01-06,2014-01-08
+        Active task               :active,  des2, 2014-01-09, 3d
+        Future task               :         des3, after des2, 5d
+        Future task2               :         des4, after des3, 5d
+        section Critical tasks
+        Completed task in the critical line :crit, done, 2014-01-06,24h
+        Implement parser and jison          :crit, done, after des1, 2d
+        Create tests for parser             :crit, active, 3d
+        Future task in critical line        :crit, 5d
+        Create tests for renderer           :2d
+        Add to mermaid                      :1d
 </div>
 
+<h3 id="class-example">Class example</h3>
+<pre><code>{{&lt; mermaid &gt;}}
+classDiagram
+  Class01 &lt;|-- AveryLongClass : Cool
+  Class03 *-- Class04
+  Class05 o-- Class06
+  Class07 .. Class08
+  Class09 --&gt; C2 : Where am i?
+  Class09 --* C3
+  Class09 --|&gt; Class07
+  Class07 : equals()
+  Class07 : Object[] elementData
+  Class01 : size()
+  Class01 : int chimp
+  Class01 : int gorilla
+  Class08 &lt;--&gt; C2: Cool label
+{{&lt; /mermaid &gt;}}
+</code></pre>
+<p>renders as</p>
+
+<div class="mermaid" align="center">
+classDiagram
+  Class01 <|-- AveryLongClass : Cool
+  Class03 *-- Class04
+  Class05 o-- Class06
+  Class07 .. Class08
+  Class09 --> C2 : Where am i?
+  Class09 --* C3
+  Class09 --|> Class07
+  Class07 : equals()
+  Class07 : Object[] elementData
+  Class01 : size()
+  Class01 : int chimp
+  Class01 : int gorilla
+  Class08 <--> C2: Cool label
+</div>
+
+<h3 id="git-example">Git example</h3>
+<pre><code>{{&lt; mermaid &gt;}}
+gitGraph:
+options
+{
+  &quot;nodeSpacing&quot;: 150,
+  &quot;nodeRadius&quot;: 10
+}
+end
+  commit
+  branch newbranch
+  checkout newbranch
+  commit
+  commit
+  checkout master
+  commit
+  commit
+  merge newbranch
+{{&lt; /mermaid&gt;}}
+</code></pre>
+<p>renders as</p>
+
+<div class="mermaid" align="center">
+gitGraph:
+options
+{
+  "nodeSpacing": 150,
+  "nodeRadius": 10
+}
+end
+  commit
+  branch newbranch
+  checkout newbranch
+  commit
+  commit
+  checkout master
+  commit
+  commit
+  merge newbranch
+</div>
+
+<h3 id="state-diagrams">State Diagrams</h3>
+<pre><code>{{&lt; mermaid &gt;}}
+stateDiagram-v2
+  open: Open Door
+  closed: Closed Door
+  locked: Locked Door
+  open   --&gt; closed: Close
+  closed --&gt; locked: Lock
+  locked --&gt; closed: Unlock
+  closed --&gt; open: Open
+{{&lt; /mermaid &gt;}}
+</code></pre>
+<p>renders as</p>
+
+<div class="mermaid" align="center">
+stateDiagram-v2
+  open: Open Door
+  closed: Closed Door
+  locked: Locked Door
+  open   --> closed: Close
+  closed --> locked: Lock
+  locked --> closed: Unlock
+  closed --> open: Open
+</div>
+
+
+
+<footer class="footline">
 	
-  
+</footer>
+
         
         </div>
         
@@ -1629,6 +1855,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -1643,6 +1870,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1947,6 +2177,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -1962,6 +2193,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -2066,8 +2300,10 @@
 	 
 	 
 		
+			<a class="nav nav-prev" href="/shortcodes/expand.fr/" title="Expand"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="/basics/" title="Basics" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="/shortcodes/mermaid.fr/" title="Mermaid" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

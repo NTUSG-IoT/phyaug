@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>PhyAug :: PhyAug</title>
+    <title>Configuration :: PhyAug</title>
 
     
     <link href="/css/nucleus.css?1618028140" rel="stylesheet">
@@ -35,7 +35,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/">
+  <body class="" data-url="/basics/configuration/">
     <nav id="sidebar" class="">
 
 
@@ -117,7 +117,7 @@
   
     
     <li data-nav-id="/basics/" title="Basics" class="dd-item
-        
+        parent
         
         
         ">
@@ -198,8 +198,8 @@
   
     
     <li data-nav-id="/basics/configuration/" title="Configuration" class="dd-item
-        
-        
+        parent
+        active
         
         ">
       <a href="/basics/configuration/">
@@ -1254,55 +1254,168 @@
         <div id="overlay"></div>
         <div class="padding highlightable">
               
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>PhyAug</a> > <a href='/basics/'>Basics</a> > Configuration
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#global-site-parameters">Global site parameters</a></li>
+    <li><a href="#activate-search">Activate search</a></li>
+    <li><a href="#mermaid">Mermaid</a></li>
+    <li><a href="#home-button-configuration">Home Button Configuration</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
         <div id="head-tags">
         
         </div>
         
         <div id="body-inner">
           
+            <h1>
+              
+              Configuration
+            </h1>
+          
 
         
 
-<span id="sidebar-toggle-span">
-<a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fas fa-bars"></i> navigation</a>
-</span>
 
- 
-<h1 id="phyaug">PhyAug</h1>
-<p><a href="http://github.com/matcornic/hugo-theme-learn">Hugo-theme-learn</a> is a theme for <a href="https://gohugo.io/">Hugo</a>, a fast and modern static website engine written in Go. Where Hugo is often used for blogs, this multilingual-ready theme is <strong>fully designed for documentation</strong>.</p>
-<p>This theme is a partial porting of the <a href="http://learn.getgrav.org/">Learn theme</a> of <a href="https://getgrav.org/">Grav</a>, a modern flat-file CMS written in PHP.</p>
 
-<div class="notices tip" ><p>Learn theme works with a <em>page tree structure</em> to organize content : All contents are pages, which belong to other pages. <a href="/cont/pages/">read more about this</a></p>
-</div>
+	<h2 id="global-site-parameters">Global site parameters</h2>
+<p>On top of <a href="https://gohugo.io/overview/configuration/">Hugo global configuration</a>, <strong>Hugo-theme-learn</strong> lets you define the following parameters in your <code>config.toml</code> (here, values are default).</p>
+<p>Note that some of these parameters are explained in details in other sections of this documentation.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[<span style="color:#a6e22e">params</span>]
+  <span style="color:#75715e"># Prefix URL to edit current page. Will display an &#34;Edit this page&#34; button on top right hand corner of every page.</span>
+  <span style="color:#75715e"># Useful to give opportunity to people to create merge request for your doc.</span>
+  <span style="color:#75715e"># See the config.toml file from this documentation site to have an example.</span>
+  <span style="color:#a6e22e">editURL</span> = <span style="color:#e6db74">&#34;&#34;</span>
+  <span style="color:#75715e"># Author of the site, will be used in meta information</span>
+  <span style="color:#a6e22e">author</span> = <span style="color:#e6db74">&#34;&#34;</span>
+  <span style="color:#75715e"># Description of the site, will be used in meta information</span>
+  <span style="color:#a6e22e">description</span> = <span style="color:#e6db74">&#34;&#34;</span>
+  <span style="color:#75715e"># Shows a checkmark for visited pages on the menu</span>
+  <span style="color:#a6e22e">showVisitedLinks</span> = <span style="color:#66d9ef">false</span>
+  <span style="color:#75715e"># Disable search function. It will hide search bar</span>
+  <span style="color:#a6e22e">disableSearch</span> = <span style="color:#66d9ef">false</span>
+  <span style="color:#75715e"># Javascript and CSS cache are automatically busted when new version of site is generated.</span>
+  <span style="color:#75715e"># Set this to true to disable this behavior (some proxies don&#39;t handle well this optimization)</span>
+  <span style="color:#a6e22e">disableAssetsBusting</span> = <span style="color:#66d9ef">false</span>
+  <span style="color:#75715e"># Set this to true to disable copy-to-clipboard button for inline code.</span>
+  <span style="color:#a6e22e">disableInlineCopyToClipBoard</span> = <span style="color:#66d9ef">false</span>
+  <span style="color:#75715e"># A title for shortcuts in menu is set by default. Set this to true to disable it.</span>
+  <span style="color:#a6e22e">disableShortcutsTitle</span> = <span style="color:#66d9ef">false</span>
+  <span style="color:#75715e"># If set to false, a Home button will appear below the search bar on the menu.</span>
+  <span style="color:#75715e"># It is redirecting to the landing page of the current language if specified. (Default is &#34;/&#34;)</span>
+  <span style="color:#a6e22e">disableLandingPageButton</span> = <span style="color:#66d9ef">true</span>
+  <span style="color:#75715e"># When using mulitlingual website, disable the switch language button.</span>
+  <span style="color:#a6e22e">disableLanguageSwitchingButton</span> = <span style="color:#66d9ef">false</span>
+  <span style="color:#75715e"># Hide breadcrumbs in the header and only show the current page title</span>
+  <span style="color:#a6e22e">disableBreadcrumb</span> = <span style="color:#66d9ef">true</span>
+  <span style="color:#75715e"># If set to true, prevents Hugo from including the mermaid module if not needed (will reduce load times and traffic)</span>
+  <span style="color:#a6e22e">disableMermaid</span> = <span style="color:#66d9ef">false</span>
+  <span style="color:#75715e"># Specifies the remote location of the mermaid js</span>
+  <span style="color:#a6e22e">customMermaidURL</span> = <span style="color:#e6db74">&#34;https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js&#34;</span>
+  <span style="color:#75715e"># Hide Next and Previous page buttons normally displayed full height beside content</span>
+  <span style="color:#a6e22e">disableNextPrev</span> = <span style="color:#66d9ef">true</span>
+  <span style="color:#75715e"># Order sections in menu by &#34;weight&#34; or &#34;title&#34;. Default to &#34;weight&#34;</span>
+  <span style="color:#a6e22e">ordersectionsby</span> = <span style="color:#e6db74">&#34;weight&#34;</span>
+  <span style="color:#75715e"># Change default color scheme with a variant one. Can be &#34;red&#34;, &#34;blue&#34;, &#34;green&#34;.</span>
+  <span style="color:#a6e22e">themeVariant</span> = <span style="color:#e6db74">&#34;&#34;</span>
+  <span style="color:#75715e"># Provide a list of custom css files to load relative from the `static/` folder in the site root.</span>
+  <span style="color:#a6e22e">custom_css</span> = [<span style="color:#e6db74">&#34;css/foo.css&#34;</span>, <span style="color:#e6db74">&#34;css/bar.css&#34;</span>]
+  <span style="color:#75715e"># Change the title separator. Default to &#34;::&#34;.</span>
+  <span style="color:#a6e22e">titleSeparator</span> = <span style="color:#e6db74">&#34;-&#34;</span>
+</code></pre></div><h2 id="activate-search">Activate search</h2>
+<p>If not already present, add the follow lines in the same <code>config.toml</code> file.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[<span style="color:#a6e22e">outputs</span>]
+<span style="color:#a6e22e">home</span> = [ <span style="color:#e6db74">&#34;HTML&#34;</span>, <span style="color:#e6db74">&#34;RSS&#34;</span>, <span style="color:#e6db74">&#34;JSON&#34;</span>]
+</code></pre></div><p>Learn theme uses the last improvement available in hugo version 20+ to generate a json index file ready to be consumed by lunr.js javascript search engine.</p>
+<blockquote>
+<p>Hugo generate lunrjs index.json at the root of public folder.
+When you build the site with <code>hugo server</code>, hugo generates it internally and of course it doesn’t show up in the filesystem</p>
+</blockquote>
+<h2 id="mermaid">Mermaid</h2>
+<p>The mermaid configuration parameters can also be set on a specific page. In this case, the global parameter would be overwritten by the local one.</p>
+<blockquote>
+<p>Example:</p>
+<p>Mermaid is globally disabled. By default it won&rsquo;t be loaded by any page.<br>
+On page &ldquo;Architecture&rdquo; you need a class diagram. You can set the mermaid parameters locally to only load mermaid on this page (not on the others).</p>
+</blockquote>
+<p>You also can disable mermaid for specific pages while globally enabled.</p>
+<h2 id="home-button-configuration">Home Button Configuration</h2>
+<p>If the <code>disableLandingPage</code> option is set to <code>false</code>, an Home button will appear
+on the left menu. It is an alternative for clicking on the logo. To edit the
+appearance, you will have to configure two parameters for the defined languages:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[<span style="color:#a6e22e">Lanugages</span>]
+[<span style="color:#a6e22e">Lanugages</span>.<span style="color:#a6e22e">en</span>]
+...
+<span style="color:#a6e22e">landingPageURL</span> = <span style="color:#e6db74">&#34;/en&#34;</span>
+<span style="color:#a6e22e">landingPageName</span> = <span style="color:#e6db74">&#34;&lt;i class=&#39;fas fa-home&#39;&gt;&lt;/i&gt; Redirect to Home&#34;</span>
+...
+[<span style="color:#a6e22e">Lanugages</span>.<span style="color:#a6e22e">fr</span>]
+...
+<span style="color:#a6e22e">landingPageURL</span> = <span style="color:#e6db74">&#34;/fr&#34;</span>
+<span style="color:#a6e22e">landingPageName</span> = <span style="color:#e6db74">&#34;&lt;i class=&#39;fas fa-home&#39;&gt;&lt;/i&gt; Accueil&#34;</span>
+...
+</code></pre></div><p>If those params are not configured for a specific language, they will get their
+default values:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#a6e22e">landingPageURL</span> = <span style="color:#e6db74">&#34;/&#34;</span>
+<span style="color:#a6e22e">landingPageName</span> = <span style="color:#e6db74">&#34;&lt;i class=&#39;fas fa-home&#39;&gt;&lt;/i&gt; Home&#34;</span>
+</code></pre></div><p>The home button is going to looks like this:</p>
+<p><img src="/en/basics/configuration/images/home_button_defaults.jpg?width=100%25" alt="Default Home Button"></p>
 
-<h2 id="main-features">Main features</h2>
-<ul>
-<li><a href="/basics/configuration/#activate-search">Automatic Search</a></li>
-<li><a href="/cont/i18n/">Multilingual mode</a></li>
-<li><strong>Unlimited menu levels</strong></li>
-<li><strong>Automatic next/prev buttons to navigate through menu entries</strong></li>
-<li><a href="/cont/markdown/">Image resizing, shadow&hellip;</a></li>
-<li><a href="/shortcodes/attachments/">Attachments files</a></li>
-<li><a href="/shortcodes/children/">List child pages</a></li>
-<li><a href="/shortcodes/mermaid/">Mermaid diagram</a> (flowchart, sequence, gantt)</li>
-<li><a href="/basics/style-customization/">Customizable look and feel and themes variants</a></li>
-<li><a href="/shortcodes/button/">Buttons</a>, <a href="/shortcodes/notice/">Tip/Note/Info/Warning boxes</a>, <a href="/shortcodes/expand/">Expand</a></li>
-</ul>
-<p><img src="https://github.com/matcornic/hugo-theme-learn/raw/master/images/screenshot.png?width=40pc&amp;classes=shadow" alt="Screenshot"></p>
-<h2 id="contribute-to-this-documentation">Contribute to this documentation</h2>
-<p>Feel free to update this content, just click the <strong>Edit this page</strong> link displayed on top right of each page, and pullrequest it</p>
 
-<div class="notices info" ><p>Your modification will be deployed automatically when merged.</p>
-</div>
 
-<h2 id="documentation-website">Documentation website</h2>
-<p>This current documentation has been statically generated with Hugo with a simple command : <code>hugo -t hugo-theme-learn</code> &ndash; source code is <a href="https://github.com/matcornic/hugo-theme-learn">available here at GitHub</a></p>
 
-<div class="notices note" ><p>Automatically published and hosted thanks to <a href="https://www.netlify.com/">Netlify</a>. Read more about <a href="https://www.netlify.com/blog/2015/07/30/hosting-hugo-on-netlifyinsanely-fast-deploys/">Automated HUGO deployments with Netlify</a></p>
-</div>
 
+<footer class=" footline" >
 	
-  
+</footer>
+
         
         </div>
         
@@ -1334,8 +1447,6 @@
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -1351,6 +1462,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1384,6 +1498,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -1399,6 +1514,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -2066,8 +2184,10 @@
 	 
 	 
 		
+			<a class="nav nav-prev" href="/basics/installation/" title="Installation"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="/basics/" title="Basics" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="/basics/style-customization/" title="Style customization" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -2107,4 +2227,3 @@
 </script>
   </body>
 </html>
-

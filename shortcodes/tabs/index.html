@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="Hugo 0.68.3" />
-    <meta name="description" content="Documentation for Hugo Learn Theme">
+    <meta name="description" content="Synchronize selection of content in different tabbed views">
 <meta name="author" content="Mathieu Cornic">
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>PhyAug :: PhyAug</title>
+    <title>Tabbed views :: PhyAug</title>
 
     
     <link href="/css/nucleus.css?1618028140" rel="stylesheet">
@@ -35,7 +35,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/">
+  <body class="" data-url="/shortcodes/tabs/">
     <nav id="sidebar" class="">
 
 
@@ -555,7 +555,7 @@
   
     
     <li data-nav-id="/shortcodes/" title="Shortcodes" class="dd-item
-        
+        parent
         
         
         ">
@@ -1200,7 +1200,7 @@
  
   
     
-      <li data-nav-id="/shortcodes/tabs/" title="Tabbed views" class="dd-item ">
+      <li data-nav-id="/shortcodes/tabs/" title="Tabbed views" class="dd-item active">
         <a href="/shortcodes/tabs/">
         Tabbed views
         
@@ -1254,55 +1254,276 @@
         <div id="overlay"></div>
         <div class="padding highlightable">
               
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>PhyAug</a> > <a href='/shortcodes/'>Shortcodes</a> > Tabbed views
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#code-example">Code example</a></li>
+    <li><a href="#config-example">Config example</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
         <div id="head-tags">
         
         </div>
         
         <div id="body-inner">
           
+            <h1>
+              
+              Tabbed views
+            </h1>
+          
 
         
 
-<span id="sidebar-toggle-span">
-<a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fas fa-bars"></i> navigation</a>
-</span>
 
- 
-<h1 id="phyaug">PhyAug</h1>
-<p><a href="http://github.com/matcornic/hugo-theme-learn">Hugo-theme-learn</a> is a theme for <a href="https://gohugo.io/">Hugo</a>, a fast and modern static website engine written in Go. Where Hugo is often used for blogs, this multilingual-ready theme is <strong>fully designed for documentation</strong>.</p>
-<p>This theme is a partial porting of the <a href="http://learn.getgrav.org/">Learn theme</a> of <a href="https://getgrav.org/">Grav</a>, a modern flat-file CMS written in PHP.</p>
+<p>Choose which content to see across the page. Very handy for providing code
+snippets for multiple languages or providing configuration in different formats.</p>
+<h2 id="code-example">Code example</h2>
+<pre><code>{{&lt; tabs &gt;}}
+{{% tab name=&quot;python&quot; %}}
+```python
+print(&quot;Hello World!&quot;)
+```
+{{% /tab %}}
+{{% tab name=&quot;R&quot; %}}
+```R
+&gt; print(&quot;Hello World!&quot;)
+```
+{{% /tab %}}
+{{% tab name=&quot;Bash&quot; %}}
+```Bash
+echo &quot;Hello World!&quot;
+```
+{{% /tab %}}
+{{&lt; /tabs &gt;}}
+</code></pre>
+<p>Renders as:</p>
 
-<div class="notices tip" ><p>Learn theme works with a <em>page tree structure</em> to organize content : All contents are pages, which belong to other pages. <a href="/cont/pages/">read more about this</a></p>
+
+<div class="tab-panel">
+    <div class="tab-nav">
+    
+        <button
+          data-tab-item="python"
+          data-tab-group="default"
+          class="tab-nav-button btn active"
+          onclick="switchTab('default','python')"
+         >python</button>
+    
+        <button
+          data-tab-item="R"
+          data-tab-group="default"
+          class="tab-nav-button btn "
+          onclick="switchTab('default','R')"
+         >R</button>
+    
+        <button
+          data-tab-item="Bash"
+          data-tab-group="default"
+          class="tab-nav-button btn "
+          onclick="switchTab('default','Bash')"
+         >Bash</button>
+    
+    </div>
+    <div class="tab-content">
+        
+        <div data-tab-item="python" data-tab-group="default" class="tab-item active">
+            <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Hello World!&#34;</span>)
+</code></pre></div>
+        </div>
+        
+        <div data-tab-item="R" data-tab-group="default" class="tab-item ">
+            <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">print</span>(<span style="color:#e6db74">&#34;Hello World!&#34;</span>)
+</code></pre></div>
+        </div>
+        
+        <div data-tab-item="Bash" data-tab-group="default" class="tab-item ">
+            <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">echo <span style="color:#e6db74">&#34;Hello World!&#34;</span>
+</code></pre></div>
+        </div>
+        
+    </div>
 </div>
 
-<h2 id="main-features">Main features</h2>
-<ul>
-<li><a href="/basics/configuration/#activate-search">Automatic Search</a></li>
-<li><a href="/cont/i18n/">Multilingual mode</a></li>
-<li><strong>Unlimited menu levels</strong></li>
-<li><strong>Automatic next/prev buttons to navigate through menu entries</strong></li>
-<li><a href="/cont/markdown/">Image resizing, shadow&hellip;</a></li>
-<li><a href="/shortcodes/attachments/">Attachments files</a></li>
-<li><a href="/shortcodes/children/">List child pages</a></li>
-<li><a href="/shortcodes/mermaid/">Mermaid diagram</a> (flowchart, sequence, gantt)</li>
-<li><a href="/basics/style-customization/">Customizable look and feel and themes variants</a></li>
-<li><a href="/shortcodes/button/">Buttons</a>, <a href="/shortcodes/notice/">Tip/Note/Info/Warning boxes</a>, <a href="/shortcodes/expand/">Expand</a></li>
-</ul>
-<p><img src="https://github.com/matcornic/hugo-theme-learn/raw/master/images/screenshot.png?width=40pc&amp;classes=shadow" alt="Screenshot"></p>
-<h2 id="contribute-to-this-documentation">Contribute to this documentation</h2>
-<p>Feel free to update this content, just click the <strong>Edit this page</strong> link displayed on top right of each page, and pullrequest it</p>
+<p>Tab views with the same tabs that belong to the same group sychronize their selection:</p>
 
-<div class="notices info" ><p>Your modification will be deployed automatically when merged.</p>
+
+<div class="tab-panel">
+    <div class="tab-nav">
+    
+        <button
+          data-tab-item="python"
+          data-tab-group="default"
+          class="tab-nav-button btn active"
+          onclick="switchTab('default','python')"
+         >python</button>
+    
+        <button
+          data-tab-item="R"
+          data-tab-group="default"
+          class="tab-nav-button btn "
+          onclick="switchTab('default','R')"
+         >R</button>
+    
+        <button
+          data-tab-item="Bash"
+          data-tab-group="default"
+          class="tab-nav-button btn "
+          onclick="switchTab('default','Bash')"
+         >Bash</button>
+    
+    </div>
+    <div class="tab-content">
+        
+        <div data-tab-item="python" data-tab-group="default" class="tab-item active">
+            <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Hello World!&#34;</span>)
+</code></pre></div>
+        </div>
+        
+        <div data-tab-item="R" data-tab-group="default" class="tab-item ">
+            <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">print</span>(<span style="color:#e6db74">&#34;Hello World!&#34;</span>)
+</code></pre></div>
+        </div>
+        
+        <div data-tab-item="Bash" data-tab-group="default" class="tab-item ">
+            <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">echo <span style="color:#e6db74">&#34;Hello World!&#34;</span>
+</code></pre></div>
+        </div>
+        
+    </div>
 </div>
 
-<h2 id="documentation-website">Documentation website</h2>
-<p>This current documentation has been statically generated with Hugo with a simple command : <code>hugo -t hugo-theme-learn</code> &ndash; source code is <a href="https://github.com/matcornic/hugo-theme-learn">available here at GitHub</a></p>
+<h2 id="config-example">Config example</h2>
+<pre><code>{{&lt; tabs groupId=&quot;config&quot; &gt;}}
+{{% tab name=&quot;json&quot; %}}
+```json
+{
+  &quot;Hello&quot;: &quot;World&quot;
+}
+```
+{{% /tab %}}
+{{% tab name=&quot;XML&quot; %}}
+```xml
+&lt;Hello&gt;World&lt;/Hello&gt;
+```
+{{% /tab %}}
+{{% tab name=&quot;properties&quot; %}}
+```properties
+Hello = World
+```
+{{% /tab %}}
+{{&lt; /tabs &gt;}}
+</code></pre>
+<p>Renders as:</p>
 
-<div class="notices note" ><p>Automatically published and hosted thanks to <a href="https://www.netlify.com/">Netlify</a>. Read more about <a href="https://www.netlify.com/blog/2015/07/30/hosting-hugo-on-netlifyinsanely-fast-deploys/">Automated HUGO deployments with Netlify</a></p>
+
+<div class="tab-panel">
+    <div class="tab-nav">
+    
+        <button
+          data-tab-item="json"
+          data-tab-group="config"
+          class="tab-nav-button btn active"
+          onclick="switchTab('config','json')"
+         >json</button>
+    
+        <button
+          data-tab-item="XML"
+          data-tab-group="config"
+          class="tab-nav-button btn "
+          onclick="switchTab('config','XML')"
+         >XML</button>
+    
+        <button
+          data-tab-item="properties"
+          data-tab-group="config"
+          class="tab-nav-button btn "
+          onclick="switchTab('config','properties')"
+         >properties</button>
+    
+    </div>
+    <div class="tab-content">
+        
+        <div data-tab-item="json" data-tab-group="config" class="tab-item active">
+            <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
+  <span style="color:#f92672">&#34;Hello&#34;</span>: <span style="color:#e6db74">&#34;World&#34;</span>
+}
+</code></pre></div>
+        </div>
+        
+        <div data-tab-item="XML" data-tab-group="config" class="tab-item ">
+            <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;Hello&gt;</span>World<span style="color:#f92672">&lt;/Hello&gt;</span>
+</code></pre></div>
+        </div>
+        
+        <div data-tab-item="properties" data-tab-group="config" class="tab-item ">
+            <pre><code class="language-properties" data-lang="properties">Hello = World
+</code></pre>
+        </div>
+        
+    </div>
 </div>
 
+
+<div class="notices warning" ><p>When using tab views with different content sets, make sure to use a common <code>groupId</code> for equal sets but distinct
+<code>groupId</code> for different sets. The <code>groupId</code> defaults to <code>'default'</code>.<br>
+<strong>Take this into account across the whole site!</strong><br>
+The tab selection is restored automatically based on the <code>groupId</code> and if it cannot find a tab item because it came
+from the <code>'default'</code> group on a different page then all tabs will be empty at first.</p>
+</div>
+
+
+
+<footer class="footline">
 	
-  
+</footer>
+
         
         </div>
         
@@ -1629,6 +1850,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -1643,6 +1865,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -2042,6 +2267,7 @@
             
             
                 
+                    
                     
                 
                 
@@ -2066,8 +2292,10 @@
 	 
 	 
 		
+			<a class="nav nav-prev" href="/shortcodes/siteparam.fr/" title="Site param"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="/basics/" title="Basics" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="/shortcodes/attachments/" title="Attachments" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

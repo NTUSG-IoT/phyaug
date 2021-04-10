@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>PhyAug :: PhyAug</title>
+    <title>Multilingual and i18n :: PhyAug</title>
 
     
     <link href="/css/nucleus.css?1618028140" rel="stylesheet">
@@ -35,7 +35,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/">
+  <body class="" data-url="/cont/i18n/">
     <nav id="sidebar" class="">
 
 
@@ -257,7 +257,7 @@
   
     
     <li data-nav-id="/cont/" title="Content" class="dd-item
-        
+        parent
         
         
         ">
@@ -480,8 +480,8 @@
   
     
     <li data-nav-id="/cont/i18n/" title="Multilingual and i18n" class="dd-item
-        
-        
+        parent
+        active
         
         ">
       <a href="/cont/i18n/">
@@ -1254,55 +1254,145 @@
         <div id="overlay"></div>
         <div class="padding highlightable">
               
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>PhyAug</a> > <a href='/cont/'>Content</a> > Multilingual and i18n
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#basic-configuration">Basic configuration</a></li>
+    <li><a href="#overwrite-translation-strings">Overwrite translation strings</a></li>
+    <li><a href="#disable-language-switching">Disable language switching</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
         <div id="head-tags">
         
         </div>
         
         <div id="body-inner">
           
+            <h1>
+              
+              Multilingual and i18n
+            </h1>
+          
 
         
 
-<span id="sidebar-toggle-span">
-<a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fas fa-bars"></i> navigation</a>
-</span>
 
- 
-<h1 id="phyaug">PhyAug</h1>
-<p><a href="http://github.com/matcornic/hugo-theme-learn">Hugo-theme-learn</a> is a theme for <a href="https://gohugo.io/">Hugo</a>, a fast and modern static website engine written in Go. Where Hugo is often used for blogs, this multilingual-ready theme is <strong>fully designed for documentation</strong>.</p>
-<p>This theme is a partial porting of the <a href="http://learn.getgrav.org/">Learn theme</a> of <a href="https://getgrav.org/">Grav</a>, a modern flat-file CMS written in PHP.</p>
 
-<div class="notices tip" ><p>Learn theme works with a <em>page tree structure</em> to organize content : All contents are pages, which belong to other pages. <a href="/cont/pages/">read more about this</a></p>
-</div>
-
-<h2 id="main-features">Main features</h2>
+	<p><strong>Learn theme</strong> is fully compatible with Hugo multilingual mode.</p>
+<p>It provides:</p>
 <ul>
-<li><a href="/basics/configuration/#activate-search">Automatic Search</a></li>
-<li><a href="/cont/i18n/">Multilingual mode</a></li>
-<li><strong>Unlimited menu levels</strong></li>
-<li><strong>Automatic next/prev buttons to navigate through menu entries</strong></li>
-<li><a href="/cont/markdown/">Image resizing, shadow&hellip;</a></li>
-<li><a href="/shortcodes/attachments/">Attachments files</a></li>
-<li><a href="/shortcodes/children/">List child pages</a></li>
-<li><a href="/shortcodes/mermaid/">Mermaid diagram</a> (flowchart, sequence, gantt)</li>
-<li><a href="/basics/style-customization/">Customizable look and feel and themes variants</a></li>
-<li><a href="/shortcodes/button/">Buttons</a>, <a href="/shortcodes/notice/">Tip/Note/Info/Warning boxes</a>, <a href="/shortcodes/expand/">Expand</a></li>
+<li>Translation strings for default values (English and French). Feel free to contribute !</li>
+<li>Automatic menu generation from multilingual content</li>
+<li>In-browser language switching</li>
 </ul>
-<p><img src="https://github.com/matcornic/hugo-theme-learn/raw/master/images/screenshot.png?width=40pc&amp;classes=shadow" alt="Screenshot"></p>
-<h2 id="contribute-to-this-documentation">Contribute to this documentation</h2>
-<p>Feel free to update this content, just click the <strong>Edit this page</strong> link displayed on top right of each page, and pullrequest it</p>
+<p><img src="/en/cont/i18n/images/i18n-menu.gif" alt="I18n menu"></p>
+<h2 id="basic-configuration">Basic configuration</h2>
+<p>After learning <a href="https://gohugo.io/content-management/multilingual">how Hugo handle multilingual websites</a>, define your languages in your <code>config.toml</code> file.</p>
+<p>For example with current French and English website.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#75715e"># English is the default language</span>
+<span style="color:#a6e22e">defaultContentLanguage</span> = <span style="color:#e6db74">&#34;en&#34;</span>
+<span style="color:#75715e"># Force to have /en/my-page and /fr/my-page routes, even for default language.</span>
+<span style="color:#a6e22e">defaultContentLanguageInSubdir</span>= <span style="color:#66d9ef">true</span>
 
-<div class="notices info" ><p>Your modification will be deployed automatically when merged.</p>
+[<span style="color:#a6e22e">Languages</span>]
+[<span style="color:#a6e22e">Languages</span>.<span style="color:#a6e22e">en</span>]
+<span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;Documentation for Hugo Learn Theme&#34;</span>
+<span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">1</span>
+<span style="color:#a6e22e">languageName</span> = <span style="color:#e6db74">&#34;English&#34;</span>
+
+[<span style="color:#a6e22e">Languages</span>.<span style="color:#a6e22e">fr</span>]
+<span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;Documentation du thème Hugo Learn&#34;</span>
+<span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">2</span>
+<span style="color:#a6e22e">languageName</span> = <span style="color:#e6db74">&#34;Français&#34;</span>
+</code></pre></div><p>Then, for each new page, append the <em>id</em> of the language to the file.</p>
+<ul>
+<li>Single file <code>my-page.md</code> is split in two files:
+<ul>
+<li>in English: <code>my-page.en.md</code></li>
+<li>in French: <code>my-page.fr.md</code></li>
+</ul>
+</li>
+<li>Single file <code>_index.md</code> is split in two files:
+<ul>
+<li>in English: <code>_index.en.md</code></li>
+<li>in French: <code>_index.fr.md</code></li>
+</ul>
+</li>
+</ul>
+
+<div class="notices info" ><p>Be aware that only translated pages are displayed in menu. It&rsquo;s not replaced with default language content.</p>
 </div>
 
-<h2 id="documentation-website">Documentation website</h2>
-<p>This current documentation has been statically generated with Hugo with a simple command : <code>hugo -t hugo-theme-learn</code> &ndash; source code is <a href="https://github.com/matcornic/hugo-theme-learn">available here at GitHub</a></p>
 
-<div class="notices note" ><p>Automatically published and hosted thanks to <a href="https://www.netlify.com/">Netlify</a>. Read more about <a href="https://www.netlify.com/blog/2015/07/30/hosting-hugo-on-netlifyinsanely-fast-deploys/">Automated HUGO deployments with Netlify</a></p>
+<div class="notices tip" ><p>Use <a href="https://gohugo.io/content-management/multilingual/#translate-your-content">slug</a> Front Matter parameter to translate urls too.</p>
 </div>
 
+<h2 id="overwrite-translation-strings">Overwrite translation strings</h2>
+<p>Translations strings are used for common default values used in the theme (<em>Edit this page</em> button, <em>Search placeholder</em> and so on). Translations are available in french and english but you may use another language or want to override default values.</p>
+<p>To override these values, create a new file in your local i18n folder <code>i18n/&lt;idlanguage&gt;.toml</code> and inspire yourself from the theme <code>themes/hugo-theme-learn/i18n/en.toml</code></p>
+<p>By the way, as these translations could be used by other people, please take the time to propose a translation by <a href="https://github.com/matcornic/hugo-theme-learn/pulls">making a PR</a> to the theme !</p>
+<h2 id="disable-language-switching">Disable language switching</h2>
+<p>Switching the language in the browser is a great feature, but for some reasons you may want to disable it.</p>
+<p>Just set <code>disableLanguageSwitchingButton=true</code> in your <code>config.toml</code></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[<span style="color:#a6e22e">params</span>]
+  <span style="color:#75715e"># When using mulitlingual website, disable the switch language button.</span>
+  <span style="color:#a6e22e">disableLanguageSwitchingButton</span> = <span style="color:#66d9ef">true</span>
+</code></pre></div><p><img src="/en/cont/i18n/images/i18n-menu.gif" alt="I18n menu"></p>
+
+
+
+
+
+<footer class=" footline" >
 	
-  
+</footer>
+
         
         </div>
         
@@ -1419,6 +1509,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -1433,6 +1524,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1578,6 +1672,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -1593,6 +1688,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -2066,8 +2164,10 @@
 	 
 	 
 		
+			<a class="nav nav-prev" href="/cont/icons/" title="Icons and logos"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="/basics/" title="Basics" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="/cont/tags/" title="Tags" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -2107,4 +2207,3 @@
 </script>
   </body>
 </html>
-

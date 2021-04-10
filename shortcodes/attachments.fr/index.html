@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="Hugo 0.68.3" />
-    <meta name="description" content="Documentation for Hugo Learn Theme">
+    <meta name="description" content="The Attachments shortcode displays a list of files attached to a page.">
 <meta name="author" content="Mathieu Cornic">
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>PhyAug :: PhyAug</title>
+    <title>Attachments (Pièces jointes) :: PhyAug</title>
 
     
     <link href="/css/nucleus.css?1618028140" rel="stylesheet">
@@ -35,7 +35,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/">
+  <body class="" data-url="/shortcodes/attachments.fr/">
     <nav id="sidebar" class="">
 
 
@@ -555,7 +555,7 @@
   
     
     <li data-nav-id="/shortcodes/" title="Shortcodes" class="dd-item
-        
+        parent
         
         
         ">
@@ -604,7 +604,7 @@
  
   
     
-      <li data-nav-id="/shortcodes/attachments.fr/" title="Attachments (Pièces jointes)" class="dd-item ">
+      <li data-nav-id="/shortcodes/attachments.fr/" title="Attachments (Pièces jointes)" class="dd-item active">
         <a href="/shortcodes/attachments.fr/">
         Attachments (Pièces jointes)
         
@@ -1254,55 +1254,574 @@
         <div id="overlay"></div>
         <div class="padding highlightable">
               
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>PhyAug</a> > <a href='/shortcodes/'>Shortcodes</a> > Attachments (Pièces jointes)
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#utilisation">Utilisation</a>
+      <ul>
+        <li><a href="#paramètres">Paramètres</a></li>
+        <li><a href="#exemples">Exemples</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
         <div id="head-tags">
         
         </div>
         
         <div id="body-inner">
           
+            <h1>
+              
+              Attachments (Pièces jointes)
+            </h1>
+          
 
         
 
-<span id="sidebar-toggle-span">
-<a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fas fa-bars"></i> navigation</a>
-</span>
 
- 
-<h1 id="phyaug">PhyAug</h1>
-<p><a href="http://github.com/matcornic/hugo-theme-learn">Hugo-theme-learn</a> is a theme for <a href="https://gohugo.io/">Hugo</a>, a fast and modern static website engine written in Go. Where Hugo is often used for blogs, this multilingual-ready theme is <strong>fully designed for documentation</strong>.</p>
-<p>This theme is a partial porting of the <a href="http://learn.getgrav.org/">Learn theme</a> of <a href="https://getgrav.org/">Grav</a>, a modern flat-file CMS written in PHP.</p>
+<p>Le shortcode <em>Attachments</em> affiche une liste de pièces jointes d&rsquo;une page.</p>
 
-<div class="notices tip" ><p>Learn theme works with a <em>page tree structure</em> to organize content : All contents are pages, which belong to other pages. <a href="/cont/pages/">read more about this</a></p>
-</div>
-
-<h2 id="main-features">Main features</h2>
-<ul>
-<li><a href="/basics/configuration/#activate-search">Automatic Search</a></li>
-<li><a href="/cont/i18n/">Multilingual mode</a></li>
-<li><strong>Unlimited menu levels</strong></li>
-<li><strong>Automatic next/prev buttons to navigate through menu entries</strong></li>
-<li><a href="/cont/markdown/">Image resizing, shadow&hellip;</a></li>
-<li><a href="/shortcodes/attachments/">Attachments files</a></li>
-<li><a href="/shortcodes/children/">List child pages</a></li>
-<li><a href="/shortcodes/mermaid/">Mermaid diagram</a> (flowchart, sequence, gantt)</li>
-<li><a href="/basics/style-customization/">Customizable look and feel and themes variants</a></li>
-<li><a href="/shortcodes/button/">Buttons</a>, <a href="/shortcodes/notice/">Tip/Note/Info/Warning boxes</a>, <a href="/shortcodes/expand/">Expand</a></li>
-</ul>
-<p><img src="https://github.com/matcornic/hugo-theme-learn/raw/master/images/screenshot.png?width=40pc&amp;classes=shadow" alt="Screenshot"></p>
-<h2 id="contribute-to-this-documentation">Contribute to this documentation</h2>
-<p>Feel free to update this content, just click the <strong>Edit this page</strong> link displayed on top right of each page, and pullrequest it</p>
-
-<div class="notices info" ><p>Your modification will be deployed automatically when merged.</p>
-</div>
-
-<h2 id="documentation-website">Documentation website</h2>
-<p>This current documentation has been statically generated with Hugo with a simple command : <code>hugo -t hugo-theme-learn</code> &ndash; source code is <a href="https://github.com/matcornic/hugo-theme-learn">available here at GitHub</a></p>
-
-<div class="notices note" ><p>Automatically published and hosted thanks to <a href="https://www.netlify.com/">Netlify</a>. Read more about <a href="https://www.netlify.com/blog/2015/07/30/hosting-hugo-on-netlifyinsanely-fast-deploys/">Automated HUGO deployments with Netlify</a></p>
-</div>
-
+<section class="attachments ">
+	<label>
+		<i class="fas fa-paperclip" aria-hidden="true"></i>
+		Attachments
+	</label>
 	
-  
+		
+	
+	<div class="attachments-files">
+	
+		
+		
+			<li>
+				<a href="/shortcodes/attachments.fr.files/BachGavotteShort.mp3" >
+					BachGavotteShort.mp3
+				</a>
+				(357 kb)
+			</li>
+		
+	
+		
+		
+			<li>
+				<a href="/shortcodes/attachments.fr.files/Carroll_AliceAuPaysDesMerveilles.pdf" >
+					Carroll_AliceAuPaysDesMerveilles.pdf
+				</a>
+				(175 kb)
+			</li>
+		
+	
+		
+		
+			<li>
+				<a href="/shortcodes/attachments.fr.files/adivorciarsetoca00cape.pdf" >
+					adivorciarsetoca00cape.pdf
+				</a>
+				(361 kb)
+			</li>
+		
+	
+		
+		
+			<li>
+				<a href="/shortcodes/attachments.fr.files/hugo.png" >
+					hugo.png
+				</a>
+				(17 kb)
+			</li>
+		
+	
+		
+		
+			<li>
+				<a href="/shortcodes/attachments.fr.files/movieselectricsheep-flock-244-32500-2.mp4" >
+					movieselectricsheep-flock-244-32500-2.mp4
+				</a>
+				(340 kb)
+			</li>
+		
+	
+	</div>
+	
+</section>
+
+
+<h2 id="utilisation">Utilisation</h2>
+<p>Le shortcode affiche la liste de fichiers trouvés dans un <strong>dossier spécifique</strong>
+A l&rsquo;heure actuelle, il supporte deux implémentations</p>
+<ol>
+<li>
+<p>Si votre page est un fichier Markdown, les pièces jointes doivent être placée dans un <strong>dossier</strong> nommé comme le nom de la page et suffixé par <strong>.files</strong>.</p>
+<blockquote>
+<ul>
+<li>content
+<ul>
+<li>_index.md</li>
+<li>page.files
+<ul>
+<li>attachment.pdf</li>
+</ul>
+</li>
+<li>page.md</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+</li>
+<li>
+<p>Si votre page est un <strong>dossier</strong>, les pièces jointes doivent être placées dans un dossier fils <strong>&lsquo;files&rsquo;</strong>.</p>
+<blockquote>
+<ul>
+<li>content
+<ul>
+<li>_index.md</li>
+<li>page
+<ul>
+<li>index.md</li>
+<li>files
+<ul>
+<li>attachment.pdf</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+</li>
+</ol>
+<p>Attention, si votre site est multi-langue, vous devrez avec autant de dossier qu&rsquo;il y a de langues.</p>
+<p>C&rsquo;est tout !</p>
+<h3 id="paramètres">Paramètres</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Paramètre</th>
+<th align="left">Défaut</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">title</td>
+<td align="left">&ldquo;Pièces jointes&rdquo;</td>
+<td align="left">Titre de la liste</td>
+</tr>
+<tr>
+<td align="left">style</td>
+<td align="left">&quot;&rdquo;</td>
+<td align="left">Choisir entre &ldquo;orange&rdquo;, &ldquo;grey&rdquo;, &ldquo;blue&rdquo; et &ldquo;green&rdquo; pour un style plus sympa</td>
+</tr>
+<tr>
+<td align="left">pattern</td>
+<td align="left">&ldquo;.*&rdquo;</td>
+<td align="left">Une expression régulière, utilisée pour filtrer les pièces jointes par leur nom de fichier. <!-- raw HTML omitted --><!-- raw HTML omitted -->Le paramètre <strong>pattern</strong> doit être une <a href="https://en.wikipedia.org/wiki/Regular_expression">expression régulière</a>.</td>
+</tr>
+</tbody>
+</table>
+<p>Par exemple:</p>
+<ul>
+<li>Pour trouver les fichiers avec le suffixe &lsquo;jpg&rsquo;, utilisez *<em>.<em>jpg</em></em> (pas *.jpg).</li>
+<li>Pour trouver les fichiers avec les suffixe &lsquo;jpg&rsquo; ou &lsquo;png&rsquo;, utilisez <strong>.*(jpg|png)</strong></li>
+</ul>
+<h3 id="exemples">Exemples</h3>
+<h4 id="lister-les-pièces-jointes-de-type-pdf-ou-mp4">Lister les pièces jointes de type pdf ou mp4</h4>
+<pre><code>{{%attachments title=&quot;Fichiers associés&quot; pattern=&quot;.*(pdf|mp4)&quot;/%}}
+</code></pre>
+<p>s&rsquo;affiche comme</p>
+
+<section class="attachments ">
+	<label>
+		<i class="fas fa-paperclip" aria-hidden="true"></i>
+		Fichiers associés
+	</label>
+	
+		
+	
+	<div class="attachments-files">
+	
+		
+		
+			
+		
+	
+		
+		
+			
+				<li>
+					<a href="/shortcodes/attachments.fr.files/Carroll_AliceAuPaysDesMerveilles.pdf" >
+						Carroll_AliceAuPaysDesMerveilles.pdf
+					</a>
+					(175 kb)
+				</li>
+			
+		
+	
+		
+		
+			
+				<li>
+					<a href="/shortcodes/attachments.fr.files/adivorciarsetoca00cape.pdf" >
+						adivorciarsetoca00cape.pdf
+					</a>
+					(361 kb)
+				</li>
+			
+		
+	
+		
+		
+			
+		
+	
+		
+		
+			
+				<li>
+					<a href="/shortcodes/attachments.fr.files/movieselectricsheep-flock-244-32500-2.mp4" >
+						movieselectricsheep-flock-244-32500-2.mp4
+					</a>
+					(340 kb)
+				</li>
+			
+		
+	
+	</div>
+	
+</section>
+
+
+<h4 id="modifier-le-style">Modifier le style</h4>
+<pre><code>{{%attachments style=&quot;orange&quot; /%}}
+</code></pre>
+<p>s&rsquo;affiche comme</p>
+
+<section class="attachments orange">
+	<label>
+		<i class="fas fa-paperclip" aria-hidden="true"></i>
+		Attachments
+	</label>
+	
+		
+	
+	<div class="attachments-files">
+	
+		
+		
+			<li>
+				<a href="/shortcodes/attachments.fr.files/BachGavotteShort.mp3" >
+					BachGavotteShort.mp3
+				</a>
+				(357 kb)
+			</li>
+		
+	
+		
+		
+			<li>
+				<a href="/shortcodes/attachments.fr.files/Carroll_AliceAuPaysDesMerveilles.pdf" >
+					Carroll_AliceAuPaysDesMerveilles.pdf
+				</a>
+				(175 kb)
+			</li>
+		
+	
+		
+		
+			<li>
+				<a href="/shortcodes/attachments.fr.files/adivorciarsetoca00cape.pdf" >
+					adivorciarsetoca00cape.pdf
+				</a>
+				(361 kb)
+			</li>
+		
+	
+		
+		
+			<li>
+				<a href="/shortcodes/attachments.fr.files/hugo.png" >
+					hugo.png
+				</a>
+				(17 kb)
+			</li>
+		
+	
+		
+		
+			<li>
+				<a href="/shortcodes/attachments.fr.files/movieselectricsheep-flock-244-32500-2.mp4" >
+					movieselectricsheep-flock-244-32500-2.mp4
+				</a>
+				(340 kb)
+			</li>
+		
+	
+	</div>
+	
+</section>
+
+
+<pre><code>{{%attachments style=&quot;grey&quot; /%}}
+</code></pre>
+<p>s&rsquo;affiche comme</p>
+
+<section class="attachments grey">
+	<label>
+		<i class="fas fa-paperclip" aria-hidden="true"></i>
+		Attachments
+	</label>
+	
+		
+	
+	<div class="attachments-files">
+	
+		
+		
+			<li>
+				<a href="/shortcodes/attachments.fr.files/BachGavotteShort.mp3" >
+					BachGavotteShort.mp3
+				</a>
+				(357 kb)
+			</li>
+		
+	
+		
+		
+			<li>
+				<a href="/shortcodes/attachments.fr.files/Carroll_AliceAuPaysDesMerveilles.pdf" >
+					Carroll_AliceAuPaysDesMerveilles.pdf
+				</a>
+				(175 kb)
+			</li>
+		
+	
+		
+		
+			<li>
+				<a href="/shortcodes/attachments.fr.files/adivorciarsetoca00cape.pdf" >
+					adivorciarsetoca00cape.pdf
+				</a>
+				(361 kb)
+			</li>
+		
+	
+		
+		
+			<li>
+				<a href="/shortcodes/attachments.fr.files/hugo.png" >
+					hugo.png
+				</a>
+				(17 kb)
+			</li>
+		
+	
+		
+		
+			<li>
+				<a href="/shortcodes/attachments.fr.files/movieselectricsheep-flock-244-32500-2.mp4" >
+					movieselectricsheep-flock-244-32500-2.mp4
+				</a>
+				(340 kb)
+			</li>
+		
+	
+	</div>
+	
+</section>
+
+
+<pre><code>{{%attachments style=&quot;blue&quot; /%}}
+</code></pre>
+<p>s&rsquo;affiche comme</p>
+
+<section class="attachments blue">
+	<label>
+		<i class="fas fa-paperclip" aria-hidden="true"></i>
+		Attachments
+	</label>
+	
+		
+	
+	<div class="attachments-files">
+	
+		
+		
+			<li>
+				<a href="/shortcodes/attachments.fr.files/BachGavotteShort.mp3" >
+					BachGavotteShort.mp3
+				</a>
+				(357 kb)
+			</li>
+		
+	
+		
+		
+			<li>
+				<a href="/shortcodes/attachments.fr.files/Carroll_AliceAuPaysDesMerveilles.pdf" >
+					Carroll_AliceAuPaysDesMerveilles.pdf
+				</a>
+				(175 kb)
+			</li>
+		
+	
+		
+		
+			<li>
+				<a href="/shortcodes/attachments.fr.files/adivorciarsetoca00cape.pdf" >
+					adivorciarsetoca00cape.pdf
+				</a>
+				(361 kb)
+			</li>
+		
+	
+		
+		
+			<li>
+				<a href="/shortcodes/attachments.fr.files/hugo.png" >
+					hugo.png
+				</a>
+				(17 kb)
+			</li>
+		
+	
+		
+		
+			<li>
+				<a href="/shortcodes/attachments.fr.files/movieselectricsheep-flock-244-32500-2.mp4" >
+					movieselectricsheep-flock-244-32500-2.mp4
+				</a>
+				(340 kb)
+			</li>
+		
+	
+	</div>
+	
+</section>
+
+
+<pre><code>{{%attachments style=&quot;green&quot; /%}}
+</code></pre>
+<p>s&rsquo;affiche comme</p>
+
+<section class="attachments green">
+	<label>
+		<i class="fas fa-paperclip" aria-hidden="true"></i>
+		Attachments
+	</label>
+	
+		
+	
+	<div class="attachments-files">
+	
+		
+		
+			<li>
+				<a href="/shortcodes/attachments.fr.files/BachGavotteShort.mp3" >
+					BachGavotteShort.mp3
+				</a>
+				(357 kb)
+			</li>
+		
+	
+		
+		
+			<li>
+				<a href="/shortcodes/attachments.fr.files/Carroll_AliceAuPaysDesMerveilles.pdf" >
+					Carroll_AliceAuPaysDesMerveilles.pdf
+				</a>
+				(175 kb)
+			</li>
+		
+	
+		
+		
+			<li>
+				<a href="/shortcodes/attachments.fr.files/adivorciarsetoca00cape.pdf" >
+					adivorciarsetoca00cape.pdf
+				</a>
+				(361 kb)
+			</li>
+		
+	
+		
+		
+			<li>
+				<a href="/shortcodes/attachments.fr.files/hugo.png" >
+					hugo.png
+				</a>
+				(17 kb)
+			</li>
+		
+	
+		
+		
+			<li>
+				<a href="/shortcodes/attachments.fr.files/movieselectricsheep-flock-244-32500-2.mp4" >
+					movieselectricsheep-flock-244-32500-2.mp4
+				</a>
+				(340 kb)
+			</li>
+		
+	
+	</div>
+	
+</section>
+
+
+
+
+<footer class="footline">
+	
+</footer>
+
         
         </div>
         
@@ -1629,6 +2148,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -1643,6 +2163,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1660,6 +2183,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -1675,6 +2199,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -2066,8 +2593,10 @@
 	 
 	 
 		
+			<a class="nav nav-prev" href="/shortcodes/attachments/" title="Attachments"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="/basics/" title="Basics" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="/shortcodes/button/" title="Button" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
